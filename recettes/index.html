@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <!-- FONTAWESOME -->
+    <script src="https://kit.fontawesome.com/83d8ba9781.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo"><img src="../img/logos/manuscrit.svg" alt=""></a>
+        <ul class="nav">
+            <li><a href="#">Nos Box</a></li>
+            <li><a href="#">Nos Recettes</a></li>
+            <li><a href="#">Concept</a></li>
+            <li><a href="#">Boutique</a></lQi>
+        </ul>
+        <ul class="compte">
+            <li><a href="#"><i class="fa-solid fa-circle-user"></i></a></li>
+            <li><a href="#"><i class="fa-solid fa-basket-shopping"></i></a></li>
+        </ul>
+    </header>
+    <main>
+        <div class="bandeau">
+            <h1>Nos recettes</h1>
+            <h3 class="bleu-f">Créez votre box composée de 5 de nos recettes !</h3>
+        </div>
+        <div class="les-recettes">
+            <div class="gauche"> <!-- le filtre et la box -->
+                <div class="filtre">
+                    <div class="titre-filtre">
+                        <h3>Filtres</h3>
+                    </div>
+                    
+                    <div class="categorie-filtre">
+                        <p class="body-large">Temps de préparation :</p>
+                        <div class="in-filtre">
+                            <a class="bouton bleu-f" href="#">10 min</a>
+                            <a class="bouton bleu-f" href="#">20 min</a>
+                            <a class="bouton bleu-f" href="#">30 min</a>
+                        </div>
+                    </div>
+                    <div class="categorie-filtre">
+                        <p class="body-large">Tranches d'âge :</p>
+                        <div class="in-filtre">
+                            <a class="bouton bleu-f" href="#">2 à 4 ans</a>
+                            <a class="bouton bleu-f" href="#">4 à 6 ans</a>
+                            <a class="bouton bleu-f" href="#">6 à 8 ans</a>
+                        </div>
+                    </div>
+                    <div class="categorie-filtre">
+                        <p class="body-large">Préférence sans :</p>
+                        <div class="in-filtre">
+                            <a class="bouton bleu-f" href="#">Gluten</a>
+                            <a class="bouton bleu-f" href="#">Poisson</a>
+                            <a class="bouton bleu-f" href="#">Lait</a>
+                            <a class="bouton bleu-f" href="#">Œuf</a>
+                            <a class="bouton bleu-f" href="#">Sulfite</a>
+                            <a class="bouton bleu-f" href="#">Arachide</a>
+                            <a class="bouton bleu-f" href="#">Graines de sésames</a>
+                            <a class="bouton bleu-f" href="#">Tricitale</a>
+                            <a class="bouton bleu-f" href="#">Soja</a>
+                            <a class="bouton bleu-f" href="#">Mollusque et crustacés</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="ma-box">
+                    <h2>Ma box</h2>
+                    <p class="body-small">la box est vide</p>
+                    <p class="body-large">Ajoutez des recettes que vous aimez</p>
+                </div>
+            </div>
+            <div class="droite"> <!-- les recettes -->
+                
+                    <div class="carte-recette">
+                        <div class="timer">
+                            <p class="body-large">10 minutes</p>
+                            <i class="fa-solid fa-stopwatch"></i>
+                        </div>
+                        <img src="img/spaghetti.png" alt="changer l'image">
+                        <h3 class="title-card-recettes" >Spaghetti</h3>
+                        <p class="body-default description-card-recettes">à la bolognaise</p>
+                        <div class="boutons-carte-recette">
+                            <a class="bouton-icone icone-plus" href="">Ajouter</a>
+                            <a class="bouton-icone favoriser" href="">Favoris</a>
+                        </div>
+                    </div>
+              
+             
+                    <div class="carte-recette">
+                        <div class="timer">
+                            <p class="body-large">10 minutes</p>
+                            <i class="fa-solid fa-stopwatch"></i>
+                        </div>
+                        <img src="img/spaghetti.png" alt="changer l'image">
+                        <h3 class="title-card-recettes" >Spaghetti</h3>
+                        <p class="body-default description-card-recettes">à la bolognaise</p>
+                        <div class="boutons-carte-recette">
+                            <a class="bouton-icone icone-plus" href="">Ajouter</a>
+                            <a class="bouton-icone favoriser" href="">Favoris</a>
+                        </div>
+                    </div>
+        
+          
+                    <div class="carte-recette">
+                        <div class="timer">
+                            <p class="body-large">10 minutes</p>
+                            <i class="fa-solid fa-stopwatch"></i>
+                        </div>
+                        <img src="img/spaghetti.png" alt="changer l'image">
+                        <h3 class="title-card-recettes" >Spaghetti</h3>
+                        <p class="body-default description-card-recettes">à la bolognaise</p>
+                        <div class="boutons-carte-recette">
+                            <a class="bouton-icone icone-plus" href="">Ajouter</a>
+                            <a class="bouton-icone favoriser" href="">Favoris</a>
+                        </div>
+                    </div>
+               
+                
+                <!-- pop up recette  https://codepen.io/imprakash/pen/GgNMXO-->
+                <div id="popup1" class="overlay">
+                    <div class="pop-up">
+                        <h3>Spaghetti à la Bolognaise</h3>
+                        <a href="#" class="close"><i class="fa-solid fa-circle-xmark"></i></a>
+                        <div>
+                            <div>
+                                <p>Avis client(s)</p>
+                                <div></div>
+                            </div>
+                            <div>
+                                <a class="bouton-icone icone-plus" href="">Ajouter</a>
+                                <a class="bouton-icone favoriser" href="">Favoris</a>
+                            </div>
+                        </div>
+                        <img src="" alt="">
+                        <div>
+                            <i class="fa-solid fa-stopwatch"></i>
+                            <h3>Temps de préparation</h3>
+                        </div>
+                        <div>
+                            <div>
+                                <i></i>
+                                <p></p>
+                                <a class="bouton-icone icone-plus" href="">Ajouter</a>
+                            </div>
+                            <a class="bouton-icone icone-plus" href="">Ajouter</a>
+                            <a class="bouton-icone favoriser" href="">Favoris</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+</body>
+</html>
