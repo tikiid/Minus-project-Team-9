@@ -6,6 +6,7 @@
 :root {
 	--couleur-orange-hex: #FFA101;
 	--couleur-orange-c-hex: #FAE6B1;
+	--couleur-orange-tc-hex: #FFF6DD;
 	--couleur-bleu-f-hex: #31525B;
 	--couleur-bleu-c-hex: #B3DEE5;
 	--couleur-gris-hex: #F5F5F5;
@@ -223,9 +224,6 @@ footer .content .partie#p2 div#droits {
 }
 
 
-
-
-
 main {
 	display: flex;
 	flex-direction: column;
@@ -233,6 +231,242 @@ main {
 	padding: 0;
 	margin: 0 8vw;
 }
+
+
+
+/* SLIDESHOW */
+slideshow {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	margin: 2.5rem 0;
+}
+
+slideshow slides {
+	display: flex;
+	width: 100%;
+	height: 70vh;
+	border-radius: 1rem;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+slideshow slide {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	background-color: rgba(0,0,0,0.2);
+	min-width: 100%;
+	height: 100%;
+}
+
+slideshow slide img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: top;
+}
+
+slideshow slide content {
+	position: absolute;
+	display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+	gap: 2em;
+	background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, transparent 80%);
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	padding: 3em;
+	box-sizing: border-box;
+}
+
+slideshow slide content div {
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+}
+
+slideshow slide content div#text {
+	text-shadow: 0px 5px 10px rgba(0,0,0,1);
+}
+
+slideshow navigation {
+	position: absolute;
+	top: 2em;
+	left: 0;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1em;
+	box-sizing: border-box;
+}
+
+slideshow navigation a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	color: var(--couleur-noir-hex);
+	font-size: 1.5em;
+	padding: 0.2em;
+	height: 2rem;
+	aspect-ratio: 2 / 1;
+	background-color: rgba(var(--couleur-orange-rgb), 0.6);
+	border-radius: 2rem;
+	transition: background-color 0.3s;
+}
+
+slideshow navigation a:hover {
+	background-color: rgba(var(--couleur-orange-rgb), 1);
+}
+
+slideshow navigation indicator {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+slideshow navigation indicator span {
+	height: 0.6em;
+	aspect-ratio: 3 / 1;
+	border-radius: 1em;
+	margin: 0.5em;
+	background-color: var(--couleur-orange-hex);
+	opacity: 0.5;
+	transition: aspect-ratio 0.3s, opacity 0.3s;
+}
+
+slideshow navigation indicator span.selected {
+	aspect-ratio: 6 / 1;
+	opacity: 1;
+}
+
+
+/* COMMENTAIRES */
+
+section#reviews {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+section#reviews .wrapper {
+	display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+	gap: 3rem;
+}
+
+section#reviews .wrapper .reviews {
+	display: flex;
+	flex-direction: row;
+	align-items: stretch;
+	justify-content: flex-start;
+	flex-wrap: nowrap;
+	overflow: hidden;
+	gap: 3rem;
+}
+
+section#reviews .wrapper .review {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	justify-content: flex-start;
+	background-color: var(--couleur-orange-tc-hex);
+	min-width: 23em;
+	max-width: 23em;
+	padding: 20px;
+	border-radius: 16px;
+	gap: 1em;
+	border: 2px solid transparent;
+	box-sizing: border-box;
+	transition: border-color 0.3s;
+}
+
+section#reviews .wrapper .selected {
+	border-color: var(--couleur-orange-hex) !important;
+}
+
+section#reviews .review .separator {
+	height: 100%;
+	width: 2px;
+	background-color: var(--couleur-bleu-f-hex);
+}
+
+section#reviews .review .info, section#reviews .review .details {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 1em;
+}
+
+section#reviews .review .info img {
+	height: 35px;
+	aspect-ratio: 1 / 1;
+	border-radius: 50px;
+}
+
+section#reviews .review .info h2 {
+	font-weight: 500;
+	font-size: 18px;
+}
+
+section#reviews .review .info .contact {
+	margin-right: auto;
+}
+
+section#reviews .review .info .rating::after {
+	content: url(img/icons/rating.svg);
+	margin-left: 5px;
+}
+
+section#reviews .review p {
+	background-color: #fff;
+	border-radius: 16px;
+	font-size: 1.5rem;
+	height: 100%;
+	padding: 1rem;
+	box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+section#reviews .wrapper .pagination {
+	display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+	margin-top: 30px;
+}
+
+section#reviews button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	color: var(--couleur-noir-hex);
+	font-size: 1.2em;
+	padding: 0.2em;
+	height: 2rem;
+	aspect-ratio: 2 / 1;
+	background-color: rgba(var(--couleur-orange-rgb), 0.6);
+	border: none;
+	border-radius: 2rem;
+	transition: background-color 0.3s;
+}
+
+section#reviews button:hover {
+	background-color: rgba(var(--couleur-orange-rgb), 1);
+}
+
+
 
 section {
 	display: flex;
