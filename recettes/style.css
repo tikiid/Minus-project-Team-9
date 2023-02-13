@@ -344,7 +344,6 @@ a.bouton-icone.favoriser::after {content: "\f004"; font-weight: 400;}
 
 .les-recettes {
     display:flex;
-    flex-direction: row;
     justify-content: space-between;
 }
 
@@ -423,16 +422,7 @@ a.bouton-icone.favoriser::after {content: "\f004"; font-weight: 400;}
 
 /* Cartes des recettes */
 
-.droite button{
-    border: none;
-    background: none;
-	color: inherit;
-	border: none;
-	padding: 0;
-	font: inherit;
-	cursor: pointer;
-	outline: inherit;
-}
+
 
 .droite .carte-recette{
     display: flex;
