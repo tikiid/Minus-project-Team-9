@@ -11,6 +11,11 @@ main{
 	
 }
 
+.bandeau h1{
+	margin-bottom: 30px	;
+	color: var(--couleur-bleu-f-hex);
+}
+
 /*  */
 
 section {
@@ -36,7 +41,6 @@ section#recettes aside{
     padding: 30px;
     width: 100%;
     height: auto;
-    border: 1px solid white;
     box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.15);
     border-radius: 16px;
     display: flex;
@@ -74,10 +78,9 @@ section#recettes aside{
     justify-content: center;
     align-items: center;
     width: 100%;
-    max-width: 328px;
-    padding: 20px;
+    max-width: 310px;
+    padding: 30px;
     gap: 15px;
-    border: 1px solid white;
     box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.15);
     border-radius: 16px;
 }
@@ -90,7 +93,8 @@ section#recettes .recettes{
     display: flex;
 	flex-direction: row;
     flex-wrap: wrap;
-    width: 70%;
+	max-width: 1200px;
+    width: 100%;
     gap: 50px;
     justify-content: center;
     align-items: flex-start;
@@ -137,7 +141,9 @@ section#recettes .recettes .carte-recette .boutons-carte-recette{
     display: flex;
     width: 100%;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+	gap: 15px;
+	
 }
 
 section#recettes .recettes .carte-recette img{
@@ -160,7 +166,7 @@ section#recettes .recettes .carte-recette img{
 .overlay .popup{
 	display: flex;
 	flex-direction: column;
-	/* width: 80vw; */
+	
 	position: fixed;
 	top: 50%;
 	left: 50%;
@@ -178,6 +184,10 @@ section#recettes .recettes .carte-recette img{
 	position: absolute;
 	top: 30px;
 	right: 30px;
+}
+
+.overlay .popup .fermer-recette i {
+	font-size: 2em;
 }
 
 .overlay .popup h3 {
@@ -264,3 +274,16 @@ section#recettes .recettes .carte-recette img{
 	gap: 10px;
 }
 
+
+
+@media screen and (max-width: 1815px) {
+	section#recettes .recettes{
+		width: 80%;
+	}
+}
+
+@media screen and (max-width: 1450px) {
+	section#recettes .recettes{
+		max-width: 500px;
+	}
+}
