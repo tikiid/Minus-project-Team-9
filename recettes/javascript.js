@@ -6,7 +6,6 @@ img_recette.addEventListener('click', function() {
     document.getElementById('popup1').style.display = 'block';
     
 });
-
 button_close.addEventListener('click', function() {
     document.getElementById('popup1').style.display = 'none';
 });
