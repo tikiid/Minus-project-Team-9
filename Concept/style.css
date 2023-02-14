@@ -1,0 +1,216 @@
+.bla{
+    display: flex;
+}
+.bla li a{
+    text-decoration: none;
+    color: black;
+    margin-right: 3px;
+}
+.bla li{
+    list-style-type: none;
+    margin: 0 6px;
+}
+ .bla li:hover{
+   text-decoration: underline;
+}
+.blabla{
+    margin: auto;
+}
+.bandeau{
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 16px;
+    text-align: center;
+    padding: 30px;
+	
+}
+.choix-box{
+   width: 567px;
+   height: 563px;
+   position: relative;
+
+}
+.zayn{
+    margin: 1em 6rem;
+    text-align: center;
+}
+.chiffre{
+    background-color: #B3DEE5;
+    width: 10px;
+    padding: 2em;
+    border-radius: 500px;
+    height: 10px;
+    position: absolute;
+    right: -8.85px;
+    top: -20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.chiffre span{
+    color: orange;
+    font-size: 25px;
+    font-weight: 700;
+    transform: skew(20deg,2deg);
+}
+.livrer{
+    display: flex;
+}
+.li{
+    width: 567PX;
+    height: 388px;
+}
+.tous{
+    display: flex;
+    justify-content: space-around;
+}
+section .bla{
+    align-items: center;
+}
+.pre{
+    text-align: center;
+    
+}
+.pres{
+    text-align: center;
+    margin-top: 2em;  
+}
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0px 77px;
+
+}
+.box p{
+    width: 60%;
+    line-height: 1.5;
+    margin-left: 5em;
+
+}
+.le{
+    width: 50%;
+}
+.boxe{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0px 100px;
+}
+.boxe p{
+    line-height: 1.5;
+    width: 35%;
+    margin-left: 30px;
+}
+
+.bandeau{
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 16px;
+    text-align: center;
+    padding: 30px;
+	
+}
+.form{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    position: relative;
+    width: fit-content;
+}
+.Formulaire{
+    background-color: var(--couleur-orange-c-hex);
+    border-radius: 50px;
+    align-items: flex-start;
+    display: flex;
+    gap: 10px;
+    padding: 15px 50px;
+    position: relative;
+    width: fit-content;
+}
+.Formulaire p{
+    font-weight: bold;
+}   
+
+.choisir{
+    width: fit-content;
+    gap: 10px;
+    padding: 10px;
+    position: relative;
+    align-items: center;
+    display: flex;
+}
+
+.mot{
+    margin: 25px;
+}
+.haha{
+    margin: 0%;
+}
+
+@media screen and (max-width: 720px){
+    body{
+       
+    }
+    main{
+        display: block;
+        order: 3;
+        background: plum;
+    }
+    .cartes{
+        flex-direction: column;
+    }
+    .lol, .cartes{
+        width: 100%;
+    }
+}
+.abonne{
+    align-items: center;
+    
+}
+.à-propos{
+    display: flex;
+    align-items: center;
+    padding: 0 77px;
+    justify-content: space-around;
+}
+.lili{
+    width: 396px ;
+    
+}
+.bolot{
+    
+    padding: 0 65px;
+}
+.bolot h3{
+    margin-bottom: 50px;
+}
+.produits{
+    align-items: center;
+}
+.produit{
+    display: flex;
+   
+   
+}
+.cheese img{
+    padding: 0 25px;
+}
+.pro{
+    text-align: center;
+    margin: 8%;
+    
+}
+
+.pro p{
+    margin:1em 2em 0 1em;
+    
+    text-align: justify;
+}
+.pro h4{
+    text-align: center;
+}
+.cheese{
+   
+    width: 50%;
+}
