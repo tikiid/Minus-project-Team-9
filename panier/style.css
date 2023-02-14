@@ -1,0 +1,76 @@
+.bandeau{
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 16px;
+    text-align: center;
+    padding: 30px;
+	
+}
+
+.bandeau h1{
+	color: var(--couleur-bleu-f-hex);
+}
+
+.le-panier .description-panier{
+    display: flex;
+    flex-direction: column;
+}
+
+.le-panier .description-panier .panier-recettes{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    align-items: center;
+}
+
+.le-panier .description-panier .panier-recettes .carte-recette{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 200px;
+    width: 100%;
+    border: 1px solid white;
+    padding: 20px 10px;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.le-panier .description-panier .carte-recette .timer{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+}
+
+.le-panier .description-panier .carte-recette .timer i{
+    margin: 0;
+}
+
+.le-panier .description-panier .carte-recette .boutons-carte-recette{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+	gap: 15px;
+	
+}
+
+.le-panier .description-panier .carte-recette img{
+	border-radius: 8px;
+    width: 50%;
+}
+
+.le-panier .description-panier .bouton-descritpion-panier{
+
+    max-width: 300px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    width: 100%;
+
+}

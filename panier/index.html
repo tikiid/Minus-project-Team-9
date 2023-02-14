@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Minus - Panier</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="../style.css">
+	<!-- FONTAWESOME -->
+	<script src="https://kit.fontawesome.com/83d8ba9781.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<header>
+		<a href="javascript:toggleHeaderMenu()" class="burger"><i class="fa-solid fa-bars"></i></a>
+		<a href="index.html" class="logo"><img src="img/logos/manuscrit.svg" alt=""></a>
+		<ul class="nav">
+			<li><a href="#">Nos Box</a></li>
+			<li><a href="recettes/index.html">Nos Recettes</a></li>
+			<li><a href="#">Concept</a></li>
+			<li><a href="#">Boutique</a></lQi>
+		</ul>
+		<ul class="compte">
+            <li id="compte"><a href="#"><i class="fa-solid fa-circle-user"></i></a></li>
+			<li><a href="#"><i class="fa-solid fa-basket-shopping"></i></a></li>
+		</ul>
+		<div class="mobile">
+			<ul>
+				<li><a href="#">Mon Compte</a></li>
+				<li><a href="#">Nos Box</a></li>
+				<li><a href="recettes/index.html">Nos Recettes</a></li>
+				<li><a href="#">Concept</a></li>
+				<li><a href="#">Boutique</a></lQi>
+			</ul>
+		</div>
+	</header>
+    <main>
+        <div class="bandeau">
+            <h1>Votre Panier</h1>
+            <h3></h3>
+        </div>
+        <section class="le-panier">
+            <div class="photo-box">
+                <div class="check-photo">
+                    <label for="">
+                        <input type="checkbox" name="" id="">
+                    </label>
+                    <img src="" alt="image de la box légumes de saison">
+                </div>
+                <div>
+                    <div class="quantite-box">
+                        <p>Quantité</p>
+                        <a href="#"><i class="fa-solid fa-minus"></i></a>
+                        <span>1</span>
+                        <a href="#"><i class="fa-solid fa-plus"></i></a>
+                    </div>
+                    <div class="prix-box">
+                        <p>Prix : 39.90€ / semaine</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="description-panier">
+                <h3>Cette box contient 5 plats :</h3>
+                <div class="panier-recettes">
+                    <div class="carte-recette">
+                        <div class="timer">
+                            <p class="body-large">10 minutes</p>
+                            <i class="fa-solid fa-stopwatch"></i>
+                        </div>
+                        <img class="img-recette" src="../recettes/img/spaghetti.png" alt="changer l'image">
+                        <h3 class="title-card-recettes" >Spaghetti</h3>
+                        <p class="body-default description-card-recettes">à la bolognaise</p>
+                    </div>
+                    <div class="carte-recette">
+                        <div class="timer">
+                            <p class="body-large">10 minutes</p>
+                            <i class="fa-solid fa-stopwatch"></i>
+                        </div>
+                        <img src="../recettes/img/salade_cesar.png" alt="changer l'image">
+                        <h3 class="title-card-recettes" >Salade César</h3>
+                        <p class="body-default description-card-recettes">Équilibrée</p>
+                    </div>
+                    <div class="carte-recette">
+                        <div class="timer">
+                            <p class="body-large">10 minutes</p>
+                            <i class="fa-solid fa-stopwatch"></i>
+                        </div>
+                        <img src="../recettes/img/aubergine_au_four.png" alt="changer l'image">
+                        <h3 class="title-card-recettes" >Aubergine au four</h3>
+                        <p class="body-default description-card-recettes">Facile à préparer</p>
+                    </div>
+                    <div class="carte-recette">
+                        <div class="timer">
+                            <p class="body-large">10 minutes</p>
+                            <i class="fa-solid fa-stopwatch"></i>
+                        </div>
+                        <img src="../recettes/img/pancakes.png" alt="changer l'image">
+                        <h3 class="title-card-recettes" >Crêpes</h3>
+                        <p class="body-default description-card-recettes">Moelleux et délicieux</p>
+                    </div>
+                    <div class="carte-recette">
+                        <div class="timer">
+                            <p class="body-large">10 minutes</p>
+                            <i class="fa-solid fa-stopwatch"></i>
+                        </div>
+                        <img src="../recettes/img/filet_de_merlu.png" alt="changer l'image">
+                        <h3 class="title-card-recettes" >Filet de Merlu</h3>
+                        <p class="body-default description-card-recettes">Aux pommes de terres</p>
+                    </div>
+                </div>
+                <div class="bouton-descritpion-panier">
+                    <a href="" class="bouton-icone bleu-f favoriser">Favoris</a>
+                    <a href="" class="bouton-icone bleu-f moins">Supprimer</a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <footer>
+		<div class="logo"><img src="img/logos/footer.svg" alt=""></div>
+		<div class="content">
+			<div class="partie" id="p1">
+				<div id="newsletter">
+					Newsletter <input type="text" class="bleu-c" placeholder="Adresse mail"> <a href="" class="bouton bleu-c">S'abonner</a>
+				</div>
+				<span class="separateur-v"></span>
+				<div id="reseaux">
+					<a href="" class="bouton-icone bleu-c lien">Communauté</a>
+					<a href=""><i class="fa-brands fa-square-facebook"></i></a>
+					<a href=""><i class="fa-brands fa-square-instagram"></i></a>
+					<a href=""><i class="fa-brands fa-youtube"></i></a>
+				</div>
+			</div>
+			<div class="partie">
+				<span class="separateur"></span>
+			</div>
+			<div class="partie" id="p2">
+				<div>
+					<p><i class="fa-solid fa-location-dot"></i> 5 Rue de Bellechasse, 75007 Paris</p>
+					<p><i class="fa-solid fa-phone"></i> 06 12 34 56 78</p>
+					<p><i class="fa-solid fa-envelope"></i> info@minus.fr</p>
+				</div>
+				<div><a href="">Nous contacter</a></div>
+				<div><a href="">Événements</a></div>
+				<div>
+					<a href="">À propos de nous</a>
+					<a href="">Minus, c'est qui ?</a>
+					<a href="">Nos valeurs</a>
+					<a href="">Nos partenaires</a>
+				</div>
+				<div>
+					<p><i class="fa-solid fa-lock"></i> Paiement 100% sécurisé par Lyra</p>
+					<img src="img/moyens_paiement.svg" alt="">
+				</div>
+			</div>
+			<div class="partie">
+				<span class="separateur"></span>
+			</div>
+			<div class="partie" id="p3">
+				<div id="droits">
+					<p>© 2023 Minus. Tous droits réservés</p>
+				</div>
+				<div id="autre">
+					<a href="">Termes et conditions</a>
+					<a href="">Confidentialité</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
