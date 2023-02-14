@@ -20,6 +20,7 @@
 	--couleur-noir-rgb: 12, 6, 0;
 
 	/* Valeurs */
+	font-size: 18px;
 	--height-header: 128px;
 
 	font-family: 'Raleway', sans-serif;
@@ -28,7 +29,7 @@
 body {
 	margin: 0;
 	padding: 0;
-	font-size: 18px;
+	font-size: 100%;
 	font-weight: 400;
 	color: var(--couleur-noir-hex);
 }
@@ -39,15 +40,15 @@ h1, h2, h3, p {
 }
 
 h1 {
-	font-size: 48px;
+	font-size: 2.6rem;
 	font-weight: 800;
 }
 h2 {
-	font-size: 36px;
+	font-size: 2rem;
 	font-weight: 700;
 }
 h3 {
-	font-size: 25px;
+	font-size: 1.4rem;
 	font-weight: 600;
 }
 
@@ -228,9 +229,19 @@ footer .content .partie#p2 div#droits {
 main {
 	display: flex;
 	flex-direction: column;
-	gap: 50px;
+	gap: 2.5rem;
 	padding: 0;
 	margin: 3vw 8vw;
+}
+
+
+
+section {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: column;
+	gap: 1.5rem;
 }
 
 
@@ -240,13 +251,13 @@ slideshow {
 	position: relative;
 	display: flex;
 	flex-direction: column;
-	margin: 2.5rem 0;
+	font-size: 1rem;
 }
 
 slideshow slides {
 	display: flex;
 	width: 100%;
-	height: 70vh;
+	height: 35vw;
 	border-radius: 1rem;
 	overflow-x: hidden;
 	overflow-y: auto;
@@ -281,7 +292,7 @@ slideshow slide content {
 	left: 0;
 	bottom: 0;
 	width: 100%;
-	padding: 3em;
+	padding: 3rem;
 	box-sizing: border-box;
 }
 
@@ -315,7 +326,7 @@ slideshow navigation a {
 	color: var(--couleur-noir-hex);
 	font-size: 1.5em;
 	padding: 0.2em;
-	height: 2rem;
+	height: 1em;
 	aspect-ratio: 2 / 1;
 	background-color: rgba(var(--couleur-orange-rgb), 0.6);
 	border-radius: 2rem;
@@ -467,39 +478,28 @@ section#reviews button:hover {
 	background-color: rgba(var(--couleur-orange-rgb), 1);
 }
 
-
-
-section {
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
-	flex-direction: column;
-	gap: 30px;
-}
-
-div.etapes {
+section#etapes .etapes {
 	display: flex;
 	justify-content: space-evenly;
 	align-items: flex-start;
 	text-align: center;
 }
 
-div.etapes .etape {
+section#etapes .etapes .etape {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: center;
 	max-width: 25%;
-	/* padding: 20px 75px; */
-	gap: 50px;
+	gap: 2rem;
 }
 
-div.etapes .etape img {
+section#etapes .etapes .etape img {
 	width: 100%;
 	border-radius: 8px;
 }
 
-div.etapes .fleche {
+section#etapes .etapes .fleche {
 	margin: auto 0;
 	background-color: var(--couleur-orange-c-hex);
 	padding: 2rem 0.8rem;
@@ -578,11 +578,11 @@ section#abonnements .carte ul {
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: stretch;
-	gap: 25px;
+	gap: 1.2rem;
 	list-style: none;
 	padding: 0;
 	width: 95%;
-	font-size: 22px;
+	font-size: 1.3rem;
 	font-weight: 500;
 }
 section#abonnements .carte li {
@@ -621,7 +621,7 @@ section#abonnements .carte#recommande span {
 
 section#abonnements .prix {
 	font-weight: 500;
-	font-size: 22px;
+	font-size: 1.3rem;
 	padding: 5px 10px;
 	border-radius: 8px;
 	background-color: var(--couleur-bleu-c-hex);
@@ -785,6 +785,7 @@ a.bouton-icone.favoriser::after {content: "\f004"; font-weight: 400;}
 
 @media screen and (max-width: 900px) {
 	:root {
+		font-size: 13px;
 		--height-header: 64px;
 	}
 
@@ -793,10 +794,6 @@ a.bouton-icone.favoriser::after {content: "\f004"; font-weight: 400;}
 	}
 	header a {
 		font-size: 1rem;
-	}
-	
-	main {
-		gap: 25px;
 	}
 
 	section#recettes {
@@ -813,6 +810,72 @@ a.bouton-icone.favoriser::after {content: "\f004"; font-weight: 400;}
 
 	section#recettes .recettes {
 		align-items: center;
+	}
+
+	slideshow slides {
+		height: 50vw;
+	}
+	slideshow slide content {
+		padding: 1em;
+	}
+
+	section#etapes .suivi {
+		display: none;
+	}
+	section#etapes .etapes {
+		justify-content: flex-start;
+		align-items: center;
+		text-align: center;
+		flex-direction: column;
+		gap: 25px;
+	}
+	section#etapes .etapes .etape {
+		max-width: 85%;
+	}
+	section#etapes .etapes .etape h3 {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+		width: 100%;
+		gap: 2rem;
+	}
+	section#etapes .etapes .etape h3::before {
+		content: "2";
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: var(--couleur-bleu-c-hex);
+		width: 3rem;
+		height: 3rem;
+		aspect-ratio: 1 / 1;
+		border-radius: 50px;
+		font-weight: 700;
+		font-size: 36px;
+		color: var(--couleur-bleu-f-hex);
+	}
+	section#etapes .etapes .etape:first-of-type h3::before {
+		content: "1";
+	}
+	section#etapes .etapes .etape:last-of-type h3::before {
+		content: "3";
+	}
+
+	section#etapes .etapes .fleche {
+		display: none;
+		padding: 0.4rem 2.6rem;
+	}
+	section#etapes .etapes .fleche i {
+		transform: rotate(90deg);
+		/* padding: 0.4rem 2.6rem; */
+	}
+
+	section#abonnements .cartes {
+		flex-direction: column;
+		gap: 2rem;
+	}
+	section#abonnements .carte {
+		max-width: 80%;
 	}
 
 	footer {
