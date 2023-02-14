@@ -26,14 +26,7 @@
 .Formulaire p{
     font-weight: bold;
 }   
-.lol{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 100%;
-    gap: 50px;
 
-}
 .choisir{
     width: fit-content;
     gap: 10px;
@@ -52,6 +45,17 @@
 
 @media screen and (max-width: 720px){
     body{
+       
+    }
+    main{
+        display: block;
+        order: 3;
         background: plum;
+    }
+    .cartes{
+        flex-direction: column;
+    }
+    .lol, .cartes{
+        width: 100%;
     }
 }
