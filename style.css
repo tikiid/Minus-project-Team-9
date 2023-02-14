@@ -59,7 +59,7 @@ header {
 	align-items: center;
 	background-color: var(--couleur-gris-hex);
 	box-sizing: border-box;
-	height: 128px;
+	height: var(--height-header);
 	padding: calc(var(--height-header) / 4) 10vw;
 }
 
@@ -78,8 +78,9 @@ header a {
 	display: block;
 	color: var(--couleur-noir-hex);
 	text-decoration: none;
-	font-size: 23px;
+	font-size: 1.5rem;
 	font-weight: 600;
+	white-space: nowrap;
 }
 
 header ul {
@@ -229,7 +230,7 @@ main {
 	flex-direction: column;
 	gap: 50px;
 	padding: 0;
-	margin: 0 8vw;
+	margin: 3vw 8vw;
 }
 
 
@@ -631,6 +632,32 @@ section#abonnements .prix {
 
 
 
+.filtre-mobile{
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 16px;
+    text-align: center;
+    padding: 30px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: box-shadow 0.3s;
+}
+
+.filtre-mobile i {
+    margin-left: 5px;
+    font-size: 1.5em;
+}
+
+.filtre-mobile:hover{
+    box-shadow: 0px 15px 45px rgba(0, 0, 0, 0.30);;
+}
+
+
+
+
+
+
 
 h1.bleu-f {
 	color: var(--couleur-bleu-f-hex);
@@ -750,6 +777,48 @@ a.bouton-icone.suivant::after {content: "\f054";}
 a.bouton-icone.precedent::after {content: "\f053";}
 a.bouton-icone.favoriser::after {content: "\f004"; font-weight: 400;}
 
+
+
+
+
+/* VERSION MOBILE */
+
+@media screen and (max-width: 900px) {
+	:root {
+		--height-header: 64px;
+	}
+
+	header ul.nav {
+		display: none;
+	}
+	header a {
+		font-size: 1rem;
+	}
+	
+	main {
+		gap: 25px;
+	}
+
+	section#recettes {
+		flex-direction: column;
+		align-items: stretch;
+	}
+	section#recettes aside {
+		display: none;
+	}
+
+    .filtre-mobile {
+		display: flex;
+	}
+
+	section#recettes .recettes {
+		align-items: center;
+	}
+
+	footer {
+		display: none;
+	}
+}
 
 
 
