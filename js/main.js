@@ -16,6 +16,11 @@ function onPageLoad() {
 window.addEventListener("load", onPageLoad);
 
 
+function toggleHeaderMenu() {
+	let header_menu = document.querySelector("header .mobile");
+	toggleClass(header_menu, "visible");
+}
+
 
 
 

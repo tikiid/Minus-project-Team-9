@@ -54,6 +54,7 @@ h3 {
 
 
 header {
+	position: relative;
 	display: flex;
 	flex-wrap: nowrap;
 	justify-content: space-between;
@@ -69,6 +70,7 @@ header .logo {
 	justify-content: center;
 	align-items: center;
     height: 100%;
+	font-size: 1rem;
 }
 
 header .logo img {
@@ -79,7 +81,7 @@ header a {
 	display: block;
 	color: var(--couleur-noir-hex);
 	text-decoration: none;
-	font-size: 1.5rem;
+	font-size: 1.5em;
 	font-weight: 600;
 	white-space: nowrap;
 }
@@ -99,7 +101,7 @@ header ul li {
 	position: relative;
 }
 
-header ul.nav li::after {
+header ul.nav li::after, header .mobile ul li::after {
 	content: "";
 	position: absolute;
 	left: 50%;
@@ -111,15 +113,54 @@ header ul.nav li::after {
 	transition: width 0.3s, left 0.3s, opacity 0.3s;
 }
 
-header ul.nav li:hover::after {
+header ul.nav li:hover::after, header .mobile ul li:hover::after {
 	left: 0;
 	width: 100%;
 	opacity: 1;
 }
 
 header ul.compte {
-	gap: 25px;
+	gap: 1.2em;
 }
+
+header a.burger {
+	display: none;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1 / 1;
+    border-radius: 0.45em;
+	padding: 0.2rem;
+	background-color: transparent;
+	transition: background-color 0.3s;
+}
+header a.burger:hover {
+	background-color: rgba(var(--couleur-orange-rgb), 0.75);
+}
+
+/* HEADER MOBILE */
+header .mobile {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	padding: 1rem 0;
+	z-index: 999;
+	background-color: var(--couleur-gris-hex);
+	transform: translate(-110%, 100%);
+	opacity: 0;
+	transition: transform 0.3s, opacity 0.3s;
+}
+header .mobile.visible {
+	transform: translate(0, 100%);
+	opacity: 1;
+}
+
+header .mobile ul {
+	flex-direction: column;
+	gap: 3rem;
+}
+
 
 
 footer {
@@ -128,6 +169,8 @@ footer {
 	align-items: center;
 	background-color: var(--couleur-bleu-f-hex);
 	padding: 2vw 7vw;
+	font-size: 1rem;
+	font-size: 1rem;
 }
 
 footer .logo {
@@ -143,7 +186,7 @@ footer .content {
 	flex-direction: column;
 	align-items: stretch;
     justify-content: center;
-	gap: 25px;
+	gap: 1.2em;
 	width: 100%;
 	padding-left: 7vw;
 }
@@ -171,11 +214,11 @@ footer .content .partie {
 	color: #fff;
 	box-sizing: border-box;
 	font-weight: 400;
-	font-size: 15px;
+	font-size: 0.8em;
 }
 
 footer .content .partie#2 {
-	font-size: 15px;
+	font-size: 0.8em;
 }
 
 footer .content .partie a:not(.bouton, .bouton-icone) {
@@ -196,7 +239,7 @@ footer .content .partie#p2 div {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-	gap: 10px;
+	gap: 0.5em;
 }
 footer .content .partie#p2 div:nth-of-type(1), footer .content .partie#p2 div:nth-of-type(4) {
     align-items: stretch;
@@ -213,7 +256,7 @@ footer .content .partie div#reseaux {
 }
 
 footer .content .partie div#reseaux a:not(.bouton, .bouton-icone) {
-	font-size: 2rem;
+	font-size: 2em;
 	color: var(--couleur-bleu-c-hex);
 }
 
@@ -301,6 +344,9 @@ slideshow slide content div {
 	flex-direction: column;
 	gap: 1em;
 }
+slideshow slide content div:last-of-type {
+	white-space: nowrap;
+}
 
 slideshow slide content div#text {
 	text-shadow: 0px 5px 10px rgba(0,0,0,1);
@@ -373,8 +419,9 @@ section#reviews .wrapper {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+	font-size: 1rem;
     width: 100%;
-	gap: 3rem;
+	gap: 3em;
 }
 
 section#reviews .wrapper .reviews {
@@ -384,7 +431,7 @@ section#reviews .wrapper .reviews {
 	justify-content: flex-start;
 	flex-wrap: nowrap;
 	overflow: hidden;
-	gap: 3rem;
+	gap: 3em;
 }
 
 section#reviews .wrapper .review {
@@ -444,9 +491,9 @@ section#reviews .review .info .rating::after {
 section#reviews .review p {
 	background-color: #fff;
 	border-radius: 16px;
-	font-size: 1.5rem;
+	font-size: 1.5em;
 	height: 100%;
-	padding: 1rem;
+	padding: 1em;
 	box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
 }
 
@@ -466,11 +513,11 @@ section#reviews button {
 	color: var(--couleur-noir-hex);
 	font-size: 1.2em;
 	padding: 0.2em;
-	height: 2rem;
+	height: 2em;
 	aspect-ratio: 2 / 1;
 	background-color: rgba(var(--couleur-orange-rgb), 0.6);
 	border: none;
-	border-radius: 2rem;
+	border-radius: 2em;
 	transition: background-color 0.3s;
 }
 
@@ -705,9 +752,9 @@ a.bouton, a.bouton-icone {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	padding: 10px;
+	padding: 0.5rem;
 	text-decoration: none;
-	border-radius: 8px;
+	border-radius: 0.45rem;
 	font-weight: 700;
 	
 	color: var(--couleur-orange-hex);
@@ -789,11 +836,14 @@ a.bouton-icone.favoriser::after {content: "\f004"; font-weight: 400;}
 		--height-header: 64px;
 	}
 
+	header a.burger {
+		display: flex;
+	}
 	header ul.nav {
 		display: none;
 	}
-	header a {
-		font-size: 1rem;
+	header ul.compte li#compte {
+		display: none;
 	}
 
 	section#recettes {
@@ -867,7 +917,6 @@ a.bouton-icone.favoriser::after {content: "\f004"; font-weight: 400;}
 	}
 	section#etapes .etapes .fleche i {
 		transform: rotate(90deg);
-		/* padding: 0.4rem 2.6rem; */
 	}
 
 	section#abonnements .cartes {
@@ -877,9 +926,36 @@ a.bouton-icone.favoriser::after {content: "\f004"; font-weight: 400;}
 	section#abonnements .carte {
 		max-width: 80%;
 	}
+	section#abonnements .prix {
+		font-size: 1rem
+	}
+
+	section#reviews .wrapper {
+		font-size: 0.65rem;
+	}
+
 
 	footer {
+		padding: 1em;
+	
+	}
+	footer .content {
+		padding-left: 1em;
+	}
+
+	footer .content .partie {
+		justify-content: space-around;
+		align-items: flex-start;
+		gap: 1em;
+	}
+	footer .content .partie#p2 div {
+		justify-content: space-around;
+	}
+	footer .content .partie div#newsletter, footer .content .partie .separateur-v {
 		display: none;
+	}
+	footer .content .partie#p2 div img {
+		width: 100%;
 	}
 }
 
