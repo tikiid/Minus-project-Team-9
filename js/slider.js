@@ -92,7 +92,13 @@ function loadReviews() {
 			<div class="details">
 				<div>%DATE</div>
 				<div class="separator"></div>
-				<div>etoiles</div>
+				<div id="etoiles">
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-regular fa-star"></i>
+				</div>
 			</div>
 			<p>%BODY.</p>
 		</div>

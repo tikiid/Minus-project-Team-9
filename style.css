@@ -467,6 +467,9 @@ section#reviews .review .info, section#reviews .review .details {
 	justify-content: flex-start;
 	gap: 1em;
 }
+section#reviews .review .details div#etoiles {
+	color: var(--couleur-orange-hex);
+}
 
 section#reviews .review .info img {
 	height: 35px;
@@ -606,6 +609,7 @@ section#abonnements .carte {
 	gap: 25px;
 	padding: 20px;
 	max-width: 20%;
+	min-width: 13rem;
 	background-color: var(--couleur-gris-hex);
 	color: var(--couleur-bleu-f-hex);
 	border-radius: 16px;
