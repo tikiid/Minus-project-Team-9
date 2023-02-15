@@ -160,7 +160,6 @@ section#recettes .recettes .carte-recette img{
 .overlay .popup{
 	display: flex;
 	flex-direction: column;
-	
 	position: fixed;
 	top: 50%;
 	left: 50%;
@@ -266,5 +265,32 @@ section#recettes .recettes .carte-recette img{
 .overlay .popup  .allergenes .infos-allergenes .les-allergenes{
 	display: flex;
 	gap: 10px;
+}
+
+@media screen and (max-width : 800px){
+	.overlay .popup img{
+		height: 20vh;
+	}
+
+	.overlay .popup .temps-preparation .temps-preparation-icone h3 {
+		display: none;
+	}
+
+	.overlay .popup .allergenes{
+		flex-direction: column;
+	}
+
+	.overlay .popup .avis-boutons-ajouter-favoris{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin: 15px 0;
+		gap:15px;
+	}
+
+}
+
+@media screen and (max-width : 620px) {
+	
 }
 
