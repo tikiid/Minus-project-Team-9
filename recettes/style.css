@@ -161,6 +161,7 @@ section#recettes .recettes .carte-recette img{
 	display: flex;
 	flex-direction: column;
 	position: fixed;
+	width: 70vw;
 	top: 50%;
 	left: 50%;
 	padding: 25px;
@@ -268,8 +269,29 @@ section#recettes .recettes .carte-recette img{
 }
 
 @media screen and (max-width : 800px){
+	.overlay .popup{
+		margin: 0;
+	}
+
+	.overlay .popup#titre-carte-recette-focus{
+		margin-top: 10px;
+	}
+
+	.overlay .popup .fermer-recette{
+		top: 1%;
+		right: 1%;
+	}
+
 	.overlay .popup img{
 		height: 20vh;
+		
+	}
+
+	
+
+	.overlay .popup .temps-preparation {
+		gap: 10px;
+		justify-content: center;
 	}
 
 	.overlay .popup .temps-preparation .temps-preparation-icone h3 {
@@ -283,7 +305,8 @@ section#recettes .recettes .carte-recette img{
 	.overlay .popup .avis-boutons-ajouter-favoris{
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
+		
+		align-items: center;
 		margin: 15px 0;
 		gap:15px;
 	}
