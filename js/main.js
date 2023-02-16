@@ -65,6 +65,11 @@ function logUserOut() {
 	toggleAccountPopup()
 }
 
+function addAnotherAddress() {
+	let second_address = document.querySelector("section#champs .livraison#deuxieme-adresse");
+	second_address.style.display = "flex";
+}
+
 
 
 

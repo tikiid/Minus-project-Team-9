@@ -5,17 +5,14 @@
 	align-items: center;
 	gap: 30px;
 	padding: 30px 0px;
+	color: var(--couleur-bleu-f-hex);
 	box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
 	border-radius: 16px;
 }
 
-.bando h3 {
-	color: var(--couleur-bleu-f-hex);
-}
-
-.logogrande {
-	width: 12%;
-	margin: auto;
+section#champs .logo-large {
+	width: 15%;
+	margin: 0 auto;
 }
 
 section#champs {
@@ -25,20 +22,20 @@ section#champs {
 	width: 50%;
 }
 
-.livraison {
+section#champs .livraison {
 	display: flex;
 	justify-content: flex-end;
 	gap: 10px;
 }
 
-.livraison input:nth-of-type(1) {
+section#champs .livraison input:nth-of-type(1) {
 	width: 100%;
 }
-.livraison input:nth-of-type(2) {
+section#champs .livraison input:nth-of-type(2) {
 	width: 50%;
 }
 
-.deuxieme_adresse {
+section#champs p#deuxieme-adresse {
 	font-style: italic;
 	color: rgba(var(--couleur-bleu-f-rgb), 0.75);
 	font-weight: 500;
@@ -47,35 +44,18 @@ section#champs {
 
 
 
-.bouton_centre {
+section#champs .suivant {
 	display: flex;
 	justify-content: center;
-	margin-bottom: 30px;
 }
 
-.deuxboutons {
+section#champs .deux-boutons {
 	display: flex;
 	justify-content: center;
-	gap: 20px;
-	width: 100%;
-	margin-bottom: 30px;
+	gap: 1.5em;
 }
 
-.lyra {
-	text-align: center;
-	font-size: 18px;
-}
-
-.cartes {
-	display: flex;
-}
-
-.cartes img {
-	width: 15rem;
+section#champs img#moyens_paiement {
+	width: 17rem;
 	margin: auto;
 }
-
-i {
-	padding: 5px;
-}
-

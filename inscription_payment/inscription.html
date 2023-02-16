@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="../style.css">
+	<script type="text/javascript" src="../js/main.js"></script>
 
     <!-- FONTAWESOME -->
     <script src="https://kit.fontawesome.com/83d8ba9781.js" crossorigin="anonymous"></script>
@@ -34,18 +35,22 @@
         </div>
 
         <section id="champs">
-            <img class="logogrande" src="../img/logos/logogrande.svg" alt="">
+            <img class="logo-large" src="../img/logos/logogrande.svg" alt="">
             <input type="text" class="bleu-f" placeholder="Nom">
             <input type="text" class="bleu-f " placeholder="Prénom">
             <div class="livraison">
                 <input type="text" class="bleu-f" placeholder="Adresse de livraison">
                 <input type="text" class="bleu-f " placeholder="Code postal">
-                <a href="" class="bouton bleu-f">Ajouter</a>
+                <a href="javascript:addAnotherAddress()" class="bouton bleu-f">Ajouter</a>
             </div>
-            <p class="deuxieme_adresse ">Vous pouvez ajouter une deuxième adresse de livraison</p>
+            <div class="livraison" id="deuxieme-adresse" style="display:none">
+                <input type="text" class="bleu-f" placeholder="Adresse de livraison">
+                <input type="text" class="bleu-f " placeholder="Code postal">
+            </div>
+            <p id="deuxieme-adresse">Vous pouvez ajouter une deuxième adresse de livraison</p>
             <input type="text" class="bleu-f " placeholder="Adresse mail">
             <input type="text" class="bleu-f " placeholder="Mot de passe">
-            <div class="bouton_centre">
+            <div class="suivant">
                 <a href="payment.html" class="bouton-icone bleu-f hover suivant">Suivant</a>
             </div>
         </section>
