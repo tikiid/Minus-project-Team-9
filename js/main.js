@@ -16,6 +16,13 @@ function onPageLoad() {
 	}
 	
 	document.addEventListener('click', function handleClickOutsideBox(event) {
+		let burger_menu_btn = document.querySelector("header a.burger");
+		let header_menu = document.querySelector("header .mobile");
+		if (!burger_menu_btn.contains(event.target)) {
+			if (!header_menu.contains(event.target)) if (header_menu.classList.contains("visible")) header_menu.classList.remove("visible");
+		}
+
+
 		let account_icone = document.querySelector("header ul li#compte");
 		let popup_connected = document.querySelector("header .compte-popup#connecter");
 		let popup_disconnected = document.querySelector("header .compte-popup#deconnecter");

@@ -145,7 +145,7 @@ header .mobile {
 	bottom: 0;
 	width: 100%;
 	padding: 1rem 0;
-	z-index: 999;
+	z-index: 888;
 	background-color: var(--couleur-gris-hex);
 	transform: translate(-110%, 100%);
 	opacity: 0;
@@ -858,7 +858,7 @@ label.checkbox::before {
 	font-size: 1rem;
 	font-weight: 600;
 	border: 2px solid var(--couleur-bleu-f-hex);
-	border-radius: 8px;
+	border-radius: 0.4rem;
 	margin-right: 1rem;
 	color: transparent;
 	background-color: rgba(var(--c-primary-rgb), 0.2);
