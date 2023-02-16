@@ -1421,8 +1421,6 @@ section#recettes .recettes{
 
 /* Cartes des recettes */
 
-
-
 section#recettes .recettes .carte-recette{
     display: flex;
     flex-direction: column;
