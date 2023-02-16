@@ -166,7 +166,9 @@
 
     .le-panier #les-recettes-panier .recettes-mobile{
         display: flex;
-        padding: 15px;
+        padding: 13px;
+        width: 95%;
+        justify-content: center;
         color: var(--couleur-bleu-f-hex);
     }
 

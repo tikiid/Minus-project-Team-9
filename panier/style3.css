@@ -52,6 +52,12 @@
     gap: 10px;
 }
 
+#recap #recap-livraison-horaire{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
 #recap #recap-box p, #recap-livraison-horaire p {
     font-size: 1.5rem;
     text-align: center;
