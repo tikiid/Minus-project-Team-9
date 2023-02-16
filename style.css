@@ -162,6 +162,77 @@ header .mobile ul {
 }
 
 
+/* POPUP COMPTE */
+
+/* HEADER MOBILE */
+header .compte-popup {
+	position: absolute;
+	right: 5vw;
+	bottom: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: stretch;
+	gap: 1.3rem;
+	padding: 1rem;
+	border-radius: 16px;
+	background-color: #fff;
+	box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.15);
+	font-size: 1rem;
+	z-index: 999;
+	opacity: 1;
+	transform: translate(0, 100%);
+	transition: transform 0.3s, opacity 0.3s;
+}
+header .compte-popup#connecter {
+	display: none;
+}
+
+header .compte-popup .ligne {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 1.3rem;
+}
+header .compte-popup .ligne#info {
+	justify-content: flex-start;
+}
+
+header .compte-popup .ligne img {
+	height: 5rem;
+	aspect-ratio: 1 / 1;
+	object-fit: cover;
+	border-radius: 50%;
+}
+
+header .compte-popup .ligne .texte {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 0.7rem;
+}
+
+header .compte-popup .ligne .texte span.separateur {
+	width: 100%;
+	height: 2px;
+	background-color: var(--couleur-bleu-f-hex);
+	opacity: 0.5;
+}
+
+header .compte-popup .ligne a.bouton {
+	width: 100%;
+}
+
+header .compte-popup .ligne#liens a {
+	color: var(--couleur-bleu-f-hex);
+	font-size: 1rem;
+	font-style: italic;
+	font-weight: 500;
+	text-decoration: underline;
+}
+
+
 
 footer {
 	display: flex;
@@ -738,7 +809,12 @@ input[type="text"].blanc {
 	background-color: rgba(255,255,255, 0.35);
 }
 input[type="text"].bleu-c {
+	color: var(--couleur-bleu-f-hex);
 	background-color: rgba(var(--couleur-bleu-c-rgb), 0.5);
+}
+input[type="text"].bleu-f {
+	color: var(--couleur-bleu-f-hex);
+	background-color: rgba(var(--couleur-bleu-f-rgb), 0.25);
 }
 
 
@@ -748,7 +824,50 @@ input[type="text"].blanc::placeholder {
 input[type="text"].bleu-c::placeholder {
 	color: rgba(var(--couleur-bleu-f-rgb), 0.75);
 }
+input[type="text"].bleu-f::placeholder {
+	color: rgba(var(--couleur-bleu-f-rgb), 0.75);
+}
 
+
+/* CHECKBOX */
+input[type="checkbox"] {
+	display: none;
+}
+
+label.checkbox {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+label.checkbox::before {
+	content: "\f00c";
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 1.5rem;
+	aspect-ratio: 1 / 1;
+	font-family: "Font Awesome 6 Pro";
+	font-size: 1em;
+	font-weight: 600;
+	border: 2px solid var(--couleur-bleu-f-hex);
+	border-radius: 8px;
+	margin-right: 1rem;
+	color: transparent;
+	background-color: rgba(var(--c-primary-rgb), 0.2);
+	outline: 2px solid transparent;
+	transition: background-color 0.3s, color 0.2s;
+}
+
+label.checkbox:hover::before {
+	color: var(--couleur-bleu-f-hex);
+	background-color: rgba(var(--couleur-bleu-f-rgb), 0.1);
+}
+
+input[type="checkbox"]:checked + label.checkbox::before {
+	color: #fff;
+	background-color: var(--couleur-bleu-f-hex);
+}
 
 /* ---- BOUTONS ---- */
 
@@ -759,6 +878,7 @@ a.bouton, a.bouton-icone {
 	padding: 0.5rem;
 	text-decoration: none;
 	border-radius: 0.45rem;
+	font-size: 1em;
 	font-weight: 700;
 	
 	color: var(--couleur-orange-hex);
@@ -825,7 +945,8 @@ a.bouton-icone.valider::after {content: "\f00c";}
 a.bouton-icone.dropdown::after {content: "\f078";}
 a.bouton-icone.dropup::after {content: "\f077";}
 a.bouton-icone.suivant::after {content: "\f054";}
-a.bouton-icone.precedent::after {content: "\f053";}
+a.bouton-icone.precedent {flex-direction: row-reverse;}
+a.bouton-icone.precedent::after {content: "\f053"; margin-left: 0; margin-right: 0.5ch;}
 a.bouton-icone.favoriser::after {content: "\f004"; font-weight: 400;}
 
 
