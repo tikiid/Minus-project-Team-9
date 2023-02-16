@@ -1724,6 +1724,108 @@ section#recettes .overlay .popup  .allergenes .infos-allergenes .les-allergenes{
     width: 100%;
 }
 
+/* VALIDATION PANIER */
+#validation-texte-bouton{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    justify-content: center;
+    margin: 50px auto;
+}
+
+#validation-texte-bouton #message-validation{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    text-align: center;
+    max-width: 700px;
+    width: 100%;
+
+}
+
+#validation-texte-bouton #message-validation #ligne1{
+    font-size: 1.3rem;
+    font-weight: 500;
+
+}
+
+#validation-texte-bouton #message-validation #ligne2{
+    max-width: 600px;
+    width: 100%;
+}
+
+#validation-texte-bouton #bouton-accueil-suivi{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    
+}
+
+/* PANIER RECAPITULATIF */
+
+.mini-bandeau{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    color: var(--couleur-bleu-f-hex);
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 16px;
+    text-align: center;
+}
+
+.bandeau #remerciement-panier-validation{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+#recap{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+
+}
+
+#recap #recap-box{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    
+
+}
+
+#recap #recap-box #recap-box-img-txt{
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    padding-bottom: 10px;
+    gap: 10px;
+}
+
+#recap #recap-livraison-horaire{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+#recap #recap-box p, #recap-livraison-horaire p {
+    font-size: 1.5rem;
+    text-align: center;
+    width: 250px;
+}
+
+#bouton-retour-valider{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
 /* VERSION MOBILE */
 
@@ -1986,5 +2088,16 @@ section#recettes .overlay .popup  .allergenes .infos-allergenes .les-allergenes{
 
     section .le-panier #les-recettes-panier .recette-panier .bouton-recette-panier{
         flex-direction: row;
+    }
+}
+
+@media screen and (max-width:560px) {
+
+	/* PANIER RECAPITULATIF */
+    #recap{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
     }
 }
