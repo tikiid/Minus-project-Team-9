@@ -794,7 +794,7 @@ h1.bleu-f {
 
 
 /* ---- INPUT ---- */
-input[type="text"], input[type="password"] {
+input[type="text"], input[type="password"], input[type="date"] {
 	border: none;
 	font-weight: 500;
 	font-size: 20px;
@@ -819,7 +819,7 @@ input[type="text"].bleu-c, input[type="password"].bleu-c {
 	color: var(--couleur-bleu-f-hex);
 	background-color: rgba(var(--couleur-bleu-c-rgb), 0.5);
 }
-input[type="text"].bleu-f, input[type="password"].bleu-f {
+input[type="text"].bleu-f, input[type="password"].bleu-f, input[type="date"].bleu-f {
 	color: var(--couleur-bleu-f-hex);
 	background-color: rgba(var(--couleur-bleu-f-rgb), 0.25);
 }
