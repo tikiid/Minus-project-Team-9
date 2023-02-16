@@ -68,10 +68,38 @@
     height: 388px;
 }
 .tous{
-    display: flex;
     
+    display: flex;
     gap: 50px;
 }
+.blabla{
+    flex-wrap: wrap;
+    display: flex;
+}
+@media screen and (max-width: 900px){
+    #container{
+       
+        max-width: 90%;
+    }
+    .choix-box h3{
+        color: blue;
+        
+    }
+    .choix-box .li{
+        width: 100%;
+    }
+    .produits{
+      
+        color: yellow;
+        display: flex;
+       
+    }
+    .produit .cheese img{
+        width: 200%;
+    }
+}
+    
+
 section .bla{
     align-items: center;
 }
@@ -89,6 +117,10 @@ section .bla{
     justify-content: space-around;
     padding: 0px 77px;
 
+}
+#loll{
+    
+  
 }
 .box p{
     width: 60%;
@@ -157,11 +189,8 @@ section .bla{
     margin: 0%;
 }
 
-@media screen and (max-width: 720px){
-    .tous{
-        flex-wrap: wrap;
-    }
-}
+
+
 .abonne{
     align-items: center;
     
@@ -187,6 +216,7 @@ section .bla{
 }
 .produits{
     align-items: center;
+    
     
 }
 .produit{
