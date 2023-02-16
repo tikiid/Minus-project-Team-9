@@ -60,7 +60,7 @@ section#box aside{
     gap: 5px;
 }
 
-section#recettes .box{
+section .box{
     display: flex;
 	flex-direction: row;
     flex-wrap: wrap;
@@ -76,7 +76,7 @@ section#recettes .box{
 
 
 
-section#recettes .box .carte-box{
+section .box .carte-box{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -92,11 +92,11 @@ section#recettes .box .carte-box{
     cursor: pointer;
 }
 
-section#recettes .box .carte-box:hover{
+section .box .carte-box:hover{
     box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.25);
 }
 
-section#recettes .box .carte-box .timer{
+section .box .carte-box .timer{
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -104,11 +104,11 @@ section#recettes .box .carte-box .timer{
     gap: 10px;
 }
 
-section#recettes .box .carte-box .timer i{
+section.box .carte-box .timer i{
     margin: 0;
 }
 
-section#recettes .box .carte-box .boutons-carte-box{
+section .box .carte-box .boutons-carte-box{
     display: flex;
     width: 100%;
     align-items: center;
@@ -117,6 +117,6 @@ section#recettes .box .carte-box .boutons-carte-box{
 	
 }
 
-section#recettes .box .carte-box img{
+section .box .carte-box img{
 	border-radius: 8px;
 }
