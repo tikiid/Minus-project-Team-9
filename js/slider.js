@@ -100,7 +100,7 @@ function loadReviews() {
 					<i class="fa-regular fa-star"></i>
 				</div>
 			</div>
-			<p>%BODY.</p>
+			<p>%BODY</p>
 		</div>
         `;
         review_content = review_content.replaceAll("%SELECTED", (id == 0 ? " selected" : " "));
