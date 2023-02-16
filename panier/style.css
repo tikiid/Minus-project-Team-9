@@ -6,6 +6,8 @@
 	
 }
 
+
+
 .bandeau h1{
 	color: var(--couleur-bleu-f-hex);
 }
@@ -78,6 +80,8 @@
     margin-bottom: 15px;
 }
 
+
+
 .le-panier #les-recettes-panier{
     display: flex;
     flex-direction: column;
@@ -85,11 +89,15 @@
     width: 100vw;
 }
 
+.le-panier #les-recettes-panier .recettes-mobile{
+    display: none;
+}
+
 .le-panier #les-recettes-panier .recette-panier{
     display: flex;
     gap: 10px;
     align-items: center;
-    width: 100%;
+    width: 97%;
     justify-content: space-between;
     box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.15);
     border-radius: 8px;
@@ -133,6 +141,53 @@
     align-items: center;
     width: 100%;
 }
+
+@media screen and (max-width : 1055px){
+    .le-panier #les-recettes-panier .recette-panier .bouton-recette-panier{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width : 900px) {
+    .le-panier{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .le-panier #les-recettes-panier .recette-panier .bouton-recette-panier{
+        flex-direction: row;
+    }
+
+    .le-panier #les-recettes-panier{
+        width: 80%;
+        align-items: center;
+    }
+
+    .le-panier #les-recettes-panier .recettes-mobile{
+        display: flex;
+        padding: 15px;
+        color: var(--couleur-bleu-f-hex);
+    }
+
+}
+
+@media screen and (max-width : 720px){
+    .le-panier #les-recettes-panier .recette-panier{
+        flex-direction: column;
+    }
+
+    .le-panier #les-recettes-panier .recette-panier .photo-titre-recette-panier{
+        justify-content: space-around;
+        width: 80%;
+    }
+
+    .le-panier #les-recettes-panier .recette-panier .bouton-recette-panier{
+        flex-direction: row;
+    }
+}
+
+
 
 
 
