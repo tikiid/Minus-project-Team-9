@@ -16,11 +16,14 @@ function onPageLoad() {
 	}
 	
 	document.addEventListener('click', function handleClickOutsideBox(event) {
+		let account_icone = document.querySelector("header ul li#compte");
 		let popup_connected = document.querySelector("header .compte-popup#connecter");
 		let popup_disconnected = document.querySelector("header .compte-popup#deconnecter");
 
-		if (!popup_connected.contains(event.target)) toggleClass(popup_connected, "visible", false);
-		if (!popup_disconnected.contains(event.target)) toggleClass(popup_disconnected, "visible", false);
+		if (!account_icone.contains(event.target)) {
+			if (!popup_connected.contains(event.target)) toggleClass(popup_connected, "visible", false);
+			if (!popup_disconnected.contains(event.target)) toggleClass(popup_disconnected, "visible", false);
+		}
 	});
 }
 window.addEventListener("load", onPageLoad);
