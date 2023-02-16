@@ -528,7 +528,7 @@ section#reviews .wrapper .review {
 }
 
 section#reviews .wrapper .selected {
-	border-color: var(--couleur-orange-hex) !important;
+	border-color: rgba(var(--couleur-orange-rgb), 0.5) !important;
 }
 
 section#reviews .review .separator {
