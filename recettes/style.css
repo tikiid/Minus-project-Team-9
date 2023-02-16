@@ -1,18 +1,3 @@
-
-/* Bandeau */
-.bandeau{
-    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.15);
-    border-radius: 16px;
-    text-align: center;
-    padding: 30px;
-	
-}
-
-.bandeau h1{
-	margin-bottom: 30px	;
-	color: var(--couleur-bleu-f-hex);
-}
-
 /*  */
 
 section#recettes {
@@ -30,7 +15,7 @@ section#recettes aside{
 
 /* Le filtre */
 
-.filtre{
+section#recettes .filtre{
     max-width: 310px;
     padding: 30px;
     width: 100%;
@@ -45,28 +30,28 @@ section#recettes aside{
 
 }
 
-.filtre .titre-filtre{
+section#recettes .filtre .titre-filtre{
     display: flex;
     justify-content: center;
     width: 100%;
 }
 
-.filtre h3 {
+section#recettes .filtre h3 {
     text-align: center;
 }
 
-.categorie-filtre p {
+section#recettes .filtre .categorie-filtre p {
     margin-bottom: 5px;
 }
 
-.in-filtre{
+section#recettes .filtre .categorie-filtre .in-filtre{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     gap: 5px;
 }
 
-.ma-box{
+section#recettes .ma-box{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -79,7 +64,7 @@ section#recettes aside{
     border-radius: 16px;
 }
 
-.ma-box p {
+section#recettes .ma-box p {
     text-align: center;
 }
 
@@ -146,7 +131,7 @@ section#recettes .recettes .carte-recette img{
 
 /* Pop up des cartes */
 
-.overlay {
+section#recettes .overlay {
 	display: none;
 	position: fixed;
 	top: 0;
@@ -157,7 +142,7 @@ section#recettes .recettes .carte-recette img{
 	
 }
 
-.overlay .popup{
+section#recettes .overlay .popup{
 	display: flex;
 	flex-direction: column;
 	position: fixed;
@@ -172,7 +157,7 @@ section#recettes .recettes .carte-recette img{
 	margin: 0 50px;
 }
 
-.overlay .popup .fermer-recette{
+section#recettes .overlay .popup .fermer-recette{
 	text-decoration: none;
 	color: var(--couleur-bleu-f-hex);
 	position: absolute;
@@ -180,68 +165,68 @@ section#recettes .recettes .carte-recette img{
 	right: 30px;
 }
 
-.overlay .popup .fermer-recette i {
+section#recettes .overlay .popup .fermer-recette i {
 	font-size: 2em;
 }
 
-.overlay .popup h3 {
+section#recettes .overlay .popup h3 {
 	text-align: center;
 }
 
-.overlay .popup img {
+section#recettes .overlay .popup img {
 	width: 70vw;
 	height: 50vh;
 	object-fit: cover;
 	border-radius: 8px;
 }
 
-.overlay .popup .avis-boutons-ajouter-favoris{
+section#recettes .overlay .popup .avis-boutons-ajouter-favoris{
 	display: flex;
 	justify-content: space-between;
 	margin: 0 50px;
 }
 
-.overlay .popup .avis-boutons-ajouter-favoris .avis-popup-recette{
+section#recettes .overlay .popup .avis-boutons-ajouter-favoris .avis-popup-recette{
 	display: flex;
 	align-items: center;
 
 }
 
-.overlay .popup .avis-boutons-ajouter-favoris .avis-popup-recette .etoile-avis{
+section#recettes .overlay .popup .avis-boutons-ajouter-favoris .avis-popup-recette .etoile-avis{
 	color: var(--couleur-orange-hex);
 }
 
-.overlay .popup .avis-boutons-ajouter-favoris .avis-popup-recette p {
+section#recettes .overlay .popup .avis-boutons-ajouter-favoris .avis-popup-recette p {
 	margin-right: 5px;
 }
 
-.overlay .popup .avis-boutons-ajouter-favoris .boutons-ajout-fav{
+section#recettes .overlay .popup .avis-boutons-ajouter-favoris .boutons-ajout-fav{
 	display: flex;
 	gap: 10px;
 }
 
-.overlay .popup .temps-preparation{
+section#recettes .overlay .popup .temps-preparation{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	margin: 0 50px;
 }
 
-.overlay .popup .temps-preparation .temps-preparation-minutes{
+section#recettes .overlay .popup .temps-preparation .temps-preparation-minutes{
 	font-size: 22px;
 }
 
-.overlay .popup .temps-preparation .temps-preparation-icone{
+section#recettes .overlay .popup .temps-preparation .temps-preparation-icone{
 	display: flex;
 	align-items: center;
 	gap: 10px;
 }
 
-.overlay .popup .temps-preparation i{
+section#recettes .overlay .popup .temps-preparation i{
 	font-size: 2em;
 }
 
-.overlay .popup  .allergenes{
+section#recettes .overlay .popup  .allergenes{
 	display: flex;
 	align-items: center;
 	margin: 0 50px;
@@ -249,63 +234,62 @@ section#recettes .recettes .carte-recette img{
 	gap: 10px;
 }
 
-.overlay .popup  .allergenes .infos-allergenes{
+section#recettes .overlay .popup  .allergenes .infos-allergenes{
 	display: flex;
 	align-items: center;
 	gap: 10px;	
 }
 
-.overlay .popup  .allergenes .infos-allergenes i {
+section#recettes .overlay .popup  .allergenes .infos-allergenes i {
 	font-size: 1.25em;
 }
 
-.overlay .popup  .allergenes .infos-allergenes h3 {
+section#recettes .overlay .popup  .allergenes .infos-allergenes h3 {
 	margin-right: 5px;
 }
 
-.overlay .popup  .allergenes .infos-allergenes .les-allergenes{
+section#recettes .overlay .popup  .allergenes .infos-allergenes .les-allergenes{
 	display: flex;
 	gap: 10px;
 }
 
 @media screen and (max-width : 800px){
-	.overlay .popup{
+	section#recettes .overlay .popup{
 		margin: 0;
 	}
 
-	.overlay .popup#titre-carte-recette-focus{
+	section#recettes .overlay .popup#titre-carte-recette-focus{
 		margin-top: 10px;
 	}
 
-	.overlay .popup .fermer-recette{
+	section#recettes .overlay .popup .fermer-recette{
 		top: 1%;
 		right: 1%;
 	}
 
-	.overlay .popup img{
+	section#recettes .overlay .popup img{
 		height: 20vh;
 		
 	}
 
 	
 
-	.overlay .popup .temps-preparation {
+	section#recettes .overlay .popup .temps-preparation {
 		gap: 10px;
 		justify-content: center;
 	}
 
-	.overlay .popup .temps-preparation .temps-preparation-icone h3 {
+	section#recettes .overlay .popup .temps-preparation .temps-preparation-icone h3 {
 		display: none;
 	}
 
-	.overlay .popup .allergenes{
+	section#recettes .overlay .popup .allergenes{
 		flex-direction: column;
 	}
 
-	.overlay .popup .avis-boutons-ajouter-favoris{
+	section#recettes .overlay .popup .avis-boutons-ajouter-favoris{
 		display: flex;
 		flex-direction: column;
-		
 		align-items: center;
 		margin: 15px 0;
 		gap:15px;
@@ -313,7 +297,5 @@ section#recettes .recettes .carte-recette img{
 
 }
 
-@media screen and (max-width : 620px) {
-	
-}
+
 
