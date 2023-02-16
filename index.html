@@ -23,7 +23,7 @@
 			<li><a href="#">Boutique</a></lQi>
 		</ul>
 		<ul class="compte">
-            <li id="compte"><a href="#"><i class="fa-solid fa-circle-user"></i></a></li>
+            <li id="compte"><a href="javascript:toggleAccountPopup()"><i class="fa-solid fa-circle-user"></i></a></li>
 			<li><a href="#"><i class="fa-solid fa-basket-shopping"></i></a></li>
 		</ul>
 		<div class="compte-popup" id="connecter">
@@ -36,11 +36,11 @@
 			</div>
 			<div class="ligne">
 				<a href="/Box/index.html" class="bouton bleu-f hover">Nos Box</a>
-				<a href="/Box/index.html" class="bouton-icone bleu-f lien">Mon Compte</a>
+				<a href="javascript:void(0)" class="bouton-icone bleu-f lien">Mon Compte</a>
 			</div>
 			<div class="ligne" id="liens">
 				<a href="recettes/index.html">Nos Recettes</a>
-				<a href="javascript:void(0)">Déconnecter</a>
+				<a href="javascript:logUserOut()">Déconnecter</a>
 			</div>
 		</div>
 		<div class="compte-popup" id="deconnecter">
@@ -55,8 +55,8 @@
 				<label class="checkbox" for="remember">Se souvenir de moi</label>
 			</div>
 			<div class="ligne">
-				<a href="/Box/index.html" class="bouton bleu-f">S'inscrire</a>
-				<a href="/Box/index.html" class="bouton bleu-f hover">Se connecter</a>
+				<a href="/inscription_payment/inscription.html" class="bouton bleu-f">S'inscrire</a>
+				<a href="javascript:logUserIn()" class="bouton bleu-f hover">Se connecter</a>
 			</div>
 			<div class="ligne" id="liens">
 				<a href="javascript:void(0)">Mot de passe oublié ?</a>
@@ -149,7 +149,7 @@
 					<p>Facile à préparer grâce à nos recettes faciles et accessibles</p>
 				</div>
 			</div>
-			<a href="" class="bouton-icone bleu-f precedent">En savoir plus</a>
+			<a href="" class="bouton-icone bleu-f lien">En savoir plus</a>
 		</section>
 		<section id="abonnements">
 			<h1>Nos Abonnements</h1>

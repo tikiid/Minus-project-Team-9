@@ -174,18 +174,24 @@ header .compte-popup {
 	justify-content: flex-start;
 	align-items: stretch;
 	gap: 1.3rem;
-	padding: 1rem;
 	border-radius: 16px;
 	background-color: #fff;
 	box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.15);
 	font-size: 1rem;
 	z-index: 999;
 	opacity: 1;
-	transform: translate(0, 100%);
-	transition: transform 0.3s, opacity 0.3s;
+	height: 0;
+	overflow: hidden;
+	padding: 0;
+	opacity: 0;
+	transform: translate(0, 80%);
+	transition: transform 0.3s ease-out, opacity 0.3s;
 }
-header .compte-popup#connecter {
-	display: none;
+header .compte-popup.visible {
+	height: auto;
+	padding: 1rem;
+	opacity: 1;
+	transform: translate(0, 100%);
 }
 
 header .compte-popup .ligne {
@@ -848,7 +854,7 @@ label.checkbox::before {
 	width: 1.5rem;
 	aspect-ratio: 1 / 1;
 	font-family: "Font Awesome 6 Pro";
-	font-size: 1em;
+	font-size: 1rem;
 	font-weight: 600;
 	border: 2px solid var(--couleur-bleu-f-hex);
 	border-radius: 8px;

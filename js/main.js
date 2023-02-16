@@ -1,4 +1,6 @@
 
+var user_connected = false;
+
 function onPageLoad() {
     
 	if (document.querySelector("slideshow")) {
@@ -12,6 +14,14 @@ function onPageLoad() {
 
         loadReviews();
 	}
+	
+	document.addEventListener('click', function handleClickOutsideBox(event) {
+		let popup_connected = document.querySelector("header .compte-popup#connecter");
+		let popup_disconnected = document.querySelector("header .compte-popup#deconnecter");
+
+		if (!popup_connected.contains(event.target)) toggleClass(popup_connected, "visible", false);
+		if (!popup_disconnected.contains(event.target)) toggleClass(popup_disconnected, "visible", false);
+	});
 }
 window.addEventListener("load", onPageLoad);
 
@@ -21,6 +31,29 @@ function toggleHeaderMenu() {
 	toggleClass(header_menu, "visible");
 }
 
+function toggleAccountPopup() {
+	let popup_connected = document.querySelector("header .compte-popup#connecter");
+	let popup_disconnected = document.querySelector("header .compte-popup#deconnecter");
+
+	if (user_connected) {
+		toggleClass(popup_connected, "visible");
+		toggleClass(popup_disconnected, "visible", false);
+	}
+	else {
+		toggleClass(popup_connected, "visible", false);
+		toggleClass(popup_disconnected, "visible");
+	}
+}
+
+function logUserIn() {
+	user_connected = true;
+	toggleAccountPopup()
+}
+
+function logUserOut() {
+	user_connected = false;
+	toggleAccountPopup()
+}
 
 
 

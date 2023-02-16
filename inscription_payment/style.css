@@ -1,153 +1,164 @@
 /* Tatiana - inscription*/
 .bando {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 30px;
-  padding: 30px 0px;
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
-  border-radius: 16px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 30px;
+	padding: 30px 0px;
+	box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+	border-radius: 16px;
 }
+
 .bando h3 {
-  color: var(--couleur-bleu-f-hex);
+	color: var(--couleur-bleu-f-hex);
 }
+
 .logogrande {
-  width: 12%;
-  margin: auto;
+	width: 12%;
+	margin: auto;
 }
+
 .champsaremplir {
-  display: flex; 
-  flex-direction: column;
-  margin: 0 auto 30px auto;
-  gap: 20px;
-  width: 60%;
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto 30px auto;
+	gap: 20px;
+	width: 60%;
 }
+
 .livraison {
-  display: flex;
-  justify-content: flex-end;
-  gap: 10px;
+	display: flex;
+	justify-content: flex-end;
+	gap: 10px;
 }
-.livraisonchamp {
-  display: flex;
-  width: 100%;
+
+.livraison input:nth-of-type(1) {
+	width: 100%;
+}
+.livraison input:nth-of-type(2) {
+	width: 50%;
 }
 
 .deuxieme_adresse {
-  font-style: italic;
-  color: rgba(var(--couleur-bleu-f-rgb), 0.75);
-  font-weight: 500;
-  font-size: 15px;
-}
-
-input.livraison {
-  width: 100%;
+	font-style: italic;
+	color: rgba(var(--couleur-bleu-f-rgb), 0.75);
+	font-weight: 500;
+	font-size: 15px;
 }
 
 
 
 .bouton_centre {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 30px;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 30px;
 }
+
 .deuxboutons {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  width: 100%;
-  margin-bottom: 30px;
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	width: 100%;
+	margin-bottom: 30px;
 }
+
 .lyra {
-  text-align: center;
-  font-size: 18px;
+	text-align: center;
+	font-size: 18px;
 }
+
 .cartes {
-  display: flex;
+	display: flex;
 }
+
 .cartes img {
-  width: 38%;
-  margin: auto;
+	width: 15rem;
+	margin: auto;
 }
+
 i {
-  padding: 5px;
+	padding: 5px;
 }
 
 
 /* a revoir */
 
 .souvenir {
-  display: block;
-  position: relative;
-  padding-left: 35px;
-  margin-bottom: 12px;
-  cursor: pointer;
-  font-size: 22px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+	display: block;
+	position: relative;
+	padding-left: 35px;
+	margin-bottom: 12px;
+	cursor: pointer;
+	font-size: 22px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
 
 .souvenir input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
 }
 
 .checkmark {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 25px;
-  width: 25px;
-  background-color: #eee;
-  border: 1px solid green;
-  border-radius: 4px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 25px;
+	width: 25px;
+	background-color: #eee;
+	border: 1px solid green;
+	border-radius: 4px;
 }
 
-.souvenir:hover input ~ .checkmark {
-  background-color: #ccc;
+.souvenir:hover input~.checkmark {
+	background-color: #ccc;
 }
 
-.souvenir input:checked ~ .checkmark {
-  background-color: #2196F3;
+.souvenir input:checked~.checkmark {
+	background-color: #2196F3;
 }
 
 .checkmark:after {
-  content: "";
-  position: absolute;
-  display: none;
+	content: "";
+	position: absolute;
+	display: none;
 }
 
-.souvenir input:checked ~ .checkmark:after {
-  display: block;
+.souvenir input:checked~.checkmark:after {
+	display: block;
 }
 
 .souvenir .checkmark:after {
-  left: 9px;
-  top: 5px;
-  width: 5px;
-  height: 10px;
-  border: solid white;
-  border-width: 0 3px 3px 0;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
+	left: 9px;
+	top: 5px;
+	width: 5px;
+	height: 10px;
+	border: solid white;
+	border-width: 0 3px 3px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
 }
+
 /* a revoir */
 .se_souvenir {
-  font-weight: 600;
-  color: var(--couleur-bleu-f-hex);
+	font-weight: 600;
+	color: var(--couleur-bleu-f-hex);
 }
+
 .cocher {
-  width: 30px;
-  height: 30px;
-  border-radius: 8px;
-  border-style: solid;
-  border-color: var(--couleur-bleu-f-hex);
+	width: 30px;
+	height: 30px;
+	border-radius: 8px;
+	border-style: solid;
+	border-color: var(--couleur-bleu-f-hex);
 }
+
 .champsaremplir h2 {
-  text-align: center;
+	text-align: center;
 }

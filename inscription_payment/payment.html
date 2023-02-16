@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Minus - Payment</title>
     <meta charset="UTF-8">
@@ -11,6 +12,7 @@
     <!-- FONTAWESOME -->
     <script src="https://kit.fontawesome.com/83d8ba9781.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <header>
         <a href="index.html" class="logo"><img src="../img/logos/manuscrit.svg" alt=""></a>
@@ -29,34 +31,29 @@
         <div class="bando">
             <h1>Inscription</h1>
             <h3>Ajouter un moyen de paiement</h3>
-        </div> 
+        </div>
         <div class="champsaremplir">
             <p class="lyra"><i class="fa-solid fa-lock"></i>Paiement 100% sécurisé par Lyra</p>
-        <div class="cartes">
-           <img src="../img/cartes.svg" alt=""> 
-        </div>
-            <input type="text" class="" placeholder="Nom">
-            <input type="text" class="blanc::placeholder " placeholder="Numéro de la carte">
+            <div class="cartes">
+                <img src="../img/cartes.svg" alt="">
+            </div>
+            <input type="text" class="bleu-f" placeholder="Nom">
+            <input type="text" class="bleu-f " placeholder="Numéro de la carte">
             <div class="livraison">
-                <div class="livraisonchamp">
-                    <input type="text" class="livraison" placeholder="Date d'expiration">
-                </div>
-                <input type="text" class="blanc::placeholder " placeholder="3 derniers chiffres">
-             </div>
-             <div class="souvenir">
-                 <p class="se_souvenir">Se souvernir de cette carte</p>
-                 <span class="cocher"></span>
-                 <input type="checkbox" checked="checked">
-                 <span class="checkmark"></span>
-                 
-             </div>
+                <input type="text" class="bleu-f" placeholder="Date d'expiration">
+                <input type="text" class="bleu-f " placeholder="3 derniers chiffres">
+            </div>
+            <div class="souvenir">
+                <input type="checkbox" name="souvenir" id="remember" checked="checked">
+                <label class="checkbox" for="remember">Se souvenir de cette carte</label>
+            </div>
             <div class="deuxboutons">
                 <a href="validation.html" class="bouton-icone bleu-f hover suivant">Ajouter</a>
                 <a href="../index.html" class="bouton bleu-f suivant">Pas maintement</a>
             </div>
             <img class="logogrande" src="../img/logos/logogrande.svg" alt="">
         </div>
-        
+
     </main>
 
     <footer>
@@ -64,7 +61,8 @@
         <div class="content">
             <div class="partie" id="p1">
                 <div id="newsletter">
-                    Newsletter <input type="text" class="bleu-c" placeholder="Adresse mail"> <a href="" class="bouton bleu-c">S'abonner</a>
+                    Newsletter <input type="text" class="bleu-c" placeholder="Adresse mail"> <a href=""
+                        class="bouton bleu-c">S'abonner</a>
                 </div>
                 <span class="separateur-v"></span>
                 <div id="reseaux">
@@ -111,4 +109,5 @@
         </div>
     </footer>
 </body>
+
 </html>
