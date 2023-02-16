@@ -1470,7 +1470,7 @@ section#recettes .recettes .carte-recette img{
 
 /* Pop up des cartes */
 
-section#recettes .overlay {
+.overlay {
 	display: none;
 	position: fixed;
 	top: 0;
@@ -1481,7 +1481,7 @@ section#recettes .overlay {
 	
 }
 
-section#recettes .overlay .popup{
+.overlay .popup{
 	display: flex;
 	flex-direction: column;
 	position: fixed;
@@ -1496,7 +1496,7 @@ section#recettes .overlay .popup{
 	margin: 0 50px;
 }
 
-section#recettes .overlay .popup .fermer-recette{
+.overlay .popup .fermer-recette{
 	text-decoration: none;
 	color: var(--couleur-bleu-f-hex);
 	position: absolute;
@@ -1504,68 +1504,67 @@ section#recettes .overlay .popup .fermer-recette{
 	right: 30px;
 }
 
-section#recettes .overlay .popup .fermer-recette i {
+.overlay .popup .fermer-recette i {
 	font-size: 2em;
 }
 
-section#recettes .overlay .popup h3 {
+.overlay .popup h3 {
 	text-align: center;
 }
 
-section#recettes .overlay .popup img {
+.overlay .popup img {
 	width: 70vw;
 	height: 50vh;
 	object-fit: cover;
 	border-radius: 8px;
 }
 
-section#recettes .overlay .popup .avis-boutons-ajouter-favoris{
+.overlay .popup .avis-boutons-ajouter-favoris{
 	display: flex;
 	justify-content: space-between;
 	margin: 0 50px;
 }
-
-section#recettes .overlay .popup .avis-boutons-ajouter-favoris .avis-popup-recette{
+.overlay .popup .avis-boutons-ajouter-favoris .avis-popup-recette{
 	display: flex;
 	align-items: center;
 
 }
 
-section#recettes .overlay .popup .avis-boutons-ajouter-favoris .avis-popup-recette .etoile-avis{
+ .overlay .popup .avis-boutons-ajouter-favoris .avis-popup-recette .etoile-avis{
 	color: var(--couleur-orange-hex);
 }
 
-section#recettes .overlay .popup .avis-boutons-ajouter-favoris .avis-popup-recette p {
+ .overlay .popup .avis-boutons-ajouter-favoris .avis-popup-recette p {
 	margin-right: 5px;
 }
 
-section#recettes .overlay .popup .avis-boutons-ajouter-favoris .boutons-ajout-fav{
+ .overlay .popup .avis-boutons-ajouter-favoris .boutons-ajout-fav{
 	display: flex;
 	gap: 10px;
 }
 
-section#recettes .overlay .popup .temps-preparation{
+ .overlay .popup .temps-preparation{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	margin: 0 50px;
 }
 
-section#recettes .overlay .popup .temps-preparation .temps-preparation-minutes{
+ .overlay .popup .temps-preparation .temps-preparation-minutes{
 	font-size: 22px;
 }
 
-section#recettes .overlay .popup .temps-preparation .temps-preparation-icone{
+ .overlay .popup .temps-preparation .temps-preparation-icone{
 	display: flex;
 	align-items: center;
 	gap: 10px;
 }
 
-section#recettes .overlay .popup .temps-preparation i{
+ .overlay .popup .temps-preparation i{
 	font-size: 2em;
 }
 
-section#recettes .overlay .popup  .allergenes{
+ .overlay .popup  .allergenes{
 	display: flex;
 	align-items: center;
 	margin: 0 50px;
@@ -1573,21 +1572,21 @@ section#recettes .overlay .popup  .allergenes{
 	gap: 10px;
 }
 
-section#recettes .overlay .popup  .allergenes .infos-allergenes{
+ .overlay .popup  .allergenes .infos-allergenes{
 	display: flex;
 	align-items: center;
 	gap: 10px;	
 }
 
-section#recettes .overlay .popup  .allergenes .infos-allergenes i {
+ .overlay .popup  .allergenes .infos-allergenes i {
 	font-size: 1.25em;
 }
 
-section#recettes .overlay .popup  .allergenes .infos-allergenes h3 {
+ .overlay .popup  .allergenes .infos-allergenes h3 {
 	margin-right: 5px;
 }
 
-section#recettes .overlay .popup  .allergenes .infos-allergenes .les-allergenes{
+ .overlay .popup  .allergenes .infos-allergenes .les-allergenes{
 	display: flex;
 	gap: 10px;
 }
