@@ -845,6 +845,7 @@ label.checkbox {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	cursor: pointer;
 }
 
 label.checkbox::before {
@@ -1064,6 +1065,10 @@ a.bouton-icone.favoriser::after {content: "\f004"; font-weight: 400;}
 
 	section#reviews .wrapper {
 		font-size: 0.65rem;
+	}
+
+	section#champs {
+		width: 80%;
 	}
 
 
