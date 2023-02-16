@@ -171,6 +171,7 @@ section .bla{
     align-items: center;
     padding: 0 77px;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 .lili{
     width: 396px ;
@@ -179,15 +180,18 @@ section .bla{
 .bolot{
     
     padding: 0 65px;
+    text-align: center;
 }
 .bolot h3{
     margin-bottom: 50px;
 }
 .produits{
     align-items: center;
+    
 }
 .produit{
     display: flex;
+   
    
    
 }
@@ -211,4 +215,5 @@ section .bla{
 .cheese{
    
     width: 50%;
+    
 }
