@@ -598,6 +598,7 @@ section#reviews button {
 	background-color: rgba(var(--couleur-orange-rgb), 0.6);
 	border: none;
 	border-radius: 2em;
+	cursor: pointer;
 	transition: background-color 0.3s;
 }
 
