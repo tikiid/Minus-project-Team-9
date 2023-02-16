@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Minus - Recette Spaghetti</title>
+	<link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/slider.js"></script>
+
+	<!-- FONTAWESOME -->
+	<script src="https://kit.fontawesome.com/83d8ba9781.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<header>
+		<a href="javascript:toggleHeaderMenu()" class="burger"><i class="fa-solid fa-bars"></i></a>
+		<a href="index.html" class="logo"><img src="img/logos/manuscrit.svg" alt=""></a>
+		<ul class="nav">
+			<li><a href="#">Nos Box</a></li>
+			<li><a href="recettes/index.html">Nos Recettes</a></li>
+			<li><a href="#">Concept</a></li>
+			<li><a href="#">Boutique</a></lQi>
+		</ul>
+		<ul class="compte">
+            <li id="compte"><a href="javascript:toggleAccountPopup()"><i class="fa-solid fa-circle-user"></i></a></li>
+			<li><a href="#"><i class="fa-solid fa-basket-shopping"></i></a></li>
+		</ul>
+		<div class="compte-popup" id="connecter">
+			<div class="ligne" id="info">
+				<img src="img/profile.png" alt="">
+				<div class="texte">
+					<h3>Bonjour, Victor 👋</h3>
+					<span class="separateur"></span>
+				</div>
+			</div>
+			<div class="ligne">
+				<a href="/Box/index.html" class="bouton bleu-f hover">Nos Box</a>
+				<a href="javascript:void(0)" class="bouton-icone bleu-f lien">Mon Compte</a>
+			</div>
+			<div class="ligne" id="liens">
+				<a href="recettes/index.html">Nos Recettes</a>
+				<a href="javascript:logUserOut()">Déconnecter</a>
+			</div>
+		</div>
+		<div class="compte-popup" id="deconnecter">
+			<div class="ligne">
+				<input type="text" name="email" placeholder="Adresse mail" class="bleu-f">
+			</div>
+			<div class="ligne">
+				<input type="password" name="password" placeholder="Mot de passe" class="bleu-f">
+			</div>
+			<div class="ligne" id="souvenir">
+				<input type="checkbox" name="souvenir" id="remember">
+				<label class="checkbox" for="remember">Se souvenir de moi</label>
+			</div>
+			<div class="ligne">
+				<a href="/inscription_payment/inscription.html" class="bouton bleu-f">S'inscrire</a>
+				<a href="javascript:logUserIn()" class="bouton bleu-f hover">Se connecter</a>
+			</div>
+			<div class="ligne" id="liens">
+				<a href="javascript:void(0)">Mot de passe oublié ?</a>
+			</div>
+		</div>
+		<div class="mobile">
+			<ul>
+				<li><a href="#">Mon Compte</a></li>
+				<li><a href="#">Nos Box</a></li>
+				<li><a href="recettes/index.html">Nos Recettes</a></li>
+				<li><a href="#">Concept</a></li>
+				<li><a href="#">Boutique</a></lQi>
+			</ul>
+		</div>
+	</header>
+	<main>
+		<!-- BANDEAU -->
+		<div class="bandeau">
+			<h1>Spaghetti à la Bolognaise</h1>
+			<div class="groupe-note">
+				<span class="nouvelle">Nouvelle recette !</span>
+				<div class="avis-clients">
+					<p>Avis client(s) :</p>
+					<div class="etoile-avis">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<section id="image-recette">
+			<img src="img/recettes/spaghetti-large.png" alt="">
+		</section>
+
+		<section id="info-recette">
+			<div class="info-ligne">
+				<div class="info" id="temps">
+					<div class="titre">
+						<i class="fa-solid fa-stopwatch"></i>
+						<h3>Temps de préparation </h3>
+						<div class="tag">25 minutes</div>
+					</div>
+					<p>Cette recette est sans doute l'une de nos « sauve-repas » favorites.
+						Quelques pâtes fraiches cuites à la minute accompagnées de noix,
+						de tomates séchées et bien sûr, de pecorino : c'est le résumé d'un plat
+						généreux, bon pour les papilles, et qui ne nécessite l'utilisation que d'une seule casserole !
+					</p>
+				</div>
+
+				<div class="info" id="allergenes">
+					<div class="titre">
+						<i class="fa-solid fa-hand-dots"></i>
+						<h3>Allergènes</h3>
+					</div>
+					<div class="tags">
+						<div class="tag">Lait</div>
+						<div class="tag">Gluten</div>
+						<div class="tag">Fruit sec</div>
+					</div>
+				</div>
+			</div>
+			<div class="info-ligne">
+				<div class="info" id="nutri">
+					<div class="titre">
+						<i class="fa-solid fa-heart-pulse"></i>
+						<h3>Valeurs Nutritionnelles</h3>
+					</div>
+					<div class="tags-wrapper">
+						<div class="valeurs">
+							<div class="valeur">
+								<p>Energie</p>
+								<div class="tag">650 kcal</div>
+							</div>
+							<div class="valeur">
+								<p>Glucides</p>
+								<div class="tag">68.36 g</div>
+							</div>
+							<div class="valeur">
+								<p>Matière grasses</p>
+								<div class="tag">11.23 g</div>
+							</div>
+							<div class="valeur">
+								<p>Acide gras saturé</p>
+								<div class="tag">5.12 g</div>
+							</div>
+						</div>
+						<div class="valeurs">
+							<div class="valeur">
+								<p>Fibres</p>
+								<div class="tag">3.66 kcal</div>
+							</div>
+							<div class="valeur">
+								<p>Sucre</p>
+								<div class="tag">3.69 g</div>
+							</div>
+							<div class="valeur">
+								<p>Sel</p>
+								<div class="tag">1.28 g</div>
+							</div>
+							<div class="valeur">
+								<p>Protéines</p>
+								<div class="tag">55.15 g</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="info" id="ingredients">
+					<div class="titre">
+						<i class="fa-solid fa-list-check"></i>
+						<h3>Ingrédients</h3>
+					</div>
+					<div class="tags">
+						<div class="valeur" style="flex-direction:row; justify-content:center;">
+							<div class="tag">Pâtes</div>
+							<div class="tag">Sauces Bolognaise</div>
+						</div>
+						<div class="valeur" style="flex-direction:row; justify-content:center;">
+							<div class="tag">Compote</div>
+							<div class="tag">Oignon jaune</div>
+						</div>
+						<div class="valeur" style="flex-direction:row; justify-content:center;">
+							<div class="tag">Carottes</div>
+							<div class="tag">Tomates séchées au soleil, BIO</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="preparation">
+			<div class="cooking">
+				<h2>Préparation</h2>
+				<img src="img/recettes/fourchette.svg" alt="">
+			</div>
+
+			<div class="etapes">
+
+				<div class="processus">
+
+					<div class="etape">
+						<div class="numero">
+							<h3>1</h3>
+							<span class="ligne"></span>
+						</div>
+						<div class="titre">
+							<h5> Le poulet</h5>
+							<div class="paragraphe">
+								<p>Salez et poivrez les filets de poulet.
+									Dans une sauteuse, faites chauffer un
+									filet d'huile d'olive à feu moyen à vif.
+									Faites revenir les filets de poulet 2 min environ
+									de chaque côté jusqu'à ce qu'ils soient dorés.
+									Couvrez et poursuivez la cuisson à feu doux 7 à 10 min.
+									Retournez-les régulièrement. Pendant ce temps, préparez
+									les tagliatelle au citron
+								</p>
+
+								<div class="image">
+									<img src="img/recettes/prep-1.png" alt="">
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="etape">
+						<div class="numero">
+							<h3>2</h3>
+							<span class="ligne"></span>
+						</div>
+						<div class="titre">
+							<h5> Les tagliatelle au citron</h5>
+							<div class="paragraphe">
+								<p>Portez à ébullition une casserole d’eau salée.
+									Faites cuire les tagliatelle 3 à 4 min pour des
+									pâtes al dente ou fondantes. Une fois cuites,
+									égouttez-les en conservant un peu d'eau de cuisson
+									et remettez-les dans la casserole. En parallèle,
+									préparez les ingrédients de la sauce. </p>
+
+								<div class="image">
+									<img src="img/recettes/prep-2.png" alt="">
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="etape">
+						<div class="numero">
+							<h3>3</h3>
+							<span class="ligne"></span>
+						</div>
+						<div class="titre">
+							<h5> La sauce</h5>
+							<div class="paragraphe">
+								<p>Pressez le jus du citron. Coupez le beurre en morceaux.
+									Une fois les tagliatelle cuites, ajoutez le persil,
+									l'eau de cuisson, le beurre, les zestes et le jus du
+									citron dans la casserole. Poivrez. Poursuivez la cuisson 2 min
+									à feu doux en mélangeant bien. Goûtez et rectifiez l'assaisonnement si nécessaire.
+								</p>
+
+								<div class="image">
+									<img src="img/recettes/prep-3.png" alt="">
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="etape">
+						<div class="numero">
+							<h3>4</h3>
+							<span class="ligne"></span>
+						</div>
+						<div class="titre">
+							<h5> Bon appetit</h5>
+							<div class="paragraphe">
+								<p>Servez sans attendre le poulet grillé accompagné des tagliatelle au citron !</p>
+								<div class="image">
+									<img src="img/recettes/prep-4.png" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+		</section>
+
+		<section id="recette-autre">
+			<a href="" class="bouton-icone bleu-f">Voir nos recettes</a>
+			<h2>Vous pourriez également aimer</h2>
+
+			<div class="carte">
+				<div class="carte-recette">
+					<div class="timer">
+						<p class="body-large">15 minutes</p>
+						<i class="fa-solid fa-stopwatch"></i>
+					</div>
+					<img src="img/recettes/plat-1.png" alt="changer l'image">
+					<h3 class="title-card-recettes">Aubergine au four</h3>
+					<p class="body-defaultdescription-card-recettes">Brève description</p>
+					<div class="boutons-carte-recette">
+						<a class="bouton-icone icone-plus" href="">Ajouter</a>
+						<a class="bouton-icone favoriser" href="">Favoris</a>
+					</div>
+				</div>
+
+				<div class="carte-recette">
+					<div class="timer">
+						<p class="body-large">20 minutes</p>
+						<i class="fa-solid fa-stopwatch"></i>
+					</div>
+					<img src="img/recettes/plat-2.png" alt="changer l'image">
+					<h3 class="title-card-recettes">Couscous</h3>
+					<p class="body-defaultdescription-card-recettes">Brève description</p>
+					<div class="boutons-carte-recette">
+						<a class="bouton-icone icone-plus" href="">Ajouter</a>
+						<a class="bouton-icone favoriser" href="">Favoris</a>
+					</div>
+				</div>
+
+				<div class="carte-recette">
+					<div class="timer">
+						<p class="body-large">10 minutes</p>
+						<i class="fa-solid fa-stopwatch"></i>
+					</div>
+					<img src="img/recettes/plat-3.png" alt="changer l'image">
+					<h3 class="title-card-recettes">Crepes</h3>
+					<p class="body-defaultdescription-card-recettes">Brève description</p>
+					<div class="boutons-carte-recette">
+						<a class="bouton-icone icone-plus" href="">Ajouter</a>
+						<a class="bouton-icone favoriser" href="">Favoris</a>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<div class="logo"><img src="img/logos/footer.svg" alt=""></div>
+		<div class="content">
+			<div class="partie" id="p1">
+				<div id="newsletter">
+					Newsletter <input type="text" class="bleu-c" placeholder="Adresse mail"> <a href="" class="bouton bleu-c">S'abonner</a>
+				</div>
+				<span class="separateur-v"></span>
+				<div id="reseaux">
+					<a href="" class="bouton-icone bleu-c lien">Communauté</a>
+					<a href=""><i class="fa-brands fa-square-facebook"></i></a>
+					<a href=""><i class="fa-brands fa-square-instagram"></i></a>
+					<a href=""><i class="fa-brands fa-youtube"></i></a>
+				</div>
+			</div>
+			<div class="partie">
+				<span class="separateur"></span>
+			</div>
+			<div class="partie" id="p2">
+				<div>
+					<p><i class="fa-solid fa-location-dot"></i> 5 Rue de Bellechasse, 75007 Paris</p>
+					<p><i class="fa-solid fa-phone"></i> 06 12 34 56 78</p>
+					<p><i class="fa-solid fa-envelope"></i> info@minus.fr</p>
+				</div>
+				<div><a href="">Nous contacter</a></div>
+				<div><a href="">Événements</a></div>
+				<div>
+					<a href="">À propos de nous</a>
+					<a href="">Minus, c'est qui ?</a>
+					<a href="">Nos valeurs</a>
+					<a href="">Nos partenaires</a>
+				</div>
+				<div>
+					<p><i class="fa-solid fa-lock"></i> Paiement 100% sécurisé par Lyra</p>
+					<img src="img/moyens_paiement.svg" alt="">
+				</div>
+			</div>
+			<div class="partie">
+				<span class="separateur"></span>
+			</div>
+			<div class="partie" id="p3">
+				<div id="droits">
+					<p>© 2023 Minus. Tous droits réservés</p>
+				</div>
+				<div id="autre">
+					<a href="">Termes et conditions</a>
+					<a href="">Confidentialité</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
