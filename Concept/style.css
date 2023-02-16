@@ -1,10 +1,13 @@
 .bla{
     display: flex;
+    gap: 10px;
+    justify-content: center;
 }
 .bla li a{
+    font-size: 1.2rem;
     text-decoration: none;
     color: black;
-    margin-right: 3px;
+    align-items: flex-end;
 }
 .bla li{
     list-style-type: none;
@@ -25,8 +28,13 @@
 }
 .choix-box{
    width: 567px;
-   height: 563px;
    position: relative;
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   position: relative;
+   z-index: 9;
+   width: 40vw;
 
 }
 .zayn{
@@ -61,7 +69,8 @@
 }
 .tous{
     display: flex;
-    justify-content: space-around;
+    
+    gap: 50px;
 }
 section .bla{
     align-items: center;
@@ -149,19 +158,8 @@ section .bla{
 }
 
 @media screen and (max-width: 720px){
-    body{
-       
-    }
-    main{
-        display: block;
-        order: 3;
-        background: plum;
-    }
-    .cartes{
-        flex-direction: column;
-    }
-    .lol, .cartes{
-        width: 100%;
+    .tous{
+        flex-wrap: wrap;
     }
 }
 .abonne{
