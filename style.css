@@ -517,8 +517,8 @@ section#reviews .wrapper .review {
 	align-items: stretch;
 	justify-content: flex-start;
 	background-color: var(--couleur-orange-tc-hex);
-	min-width: 23em;
-	max-width: 23em;
+	min-width: 25em;
+	max-width: 25em;
 	padding: 20px;
 	border-radius: 16px;
 	gap: 1em;
