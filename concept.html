@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Minus - Concept</title>
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/main.js"></script>
+
+    <!-- FONTAWESOME -->
+    <script src="https://kit.fontawesome.com/83d8ba9781.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <a href="javascript:toggleHeaderMenu()" class="burger"><i class="fa-solid fa-bars"></i></a>
+        <a href="index.html" class="logo"><img src="img/logos/manuscrit.svg" alt=""></a>
+        <ul class="nav">
+            <li><a href="nosbox.html">Nos Box</a></li>
+            <li><a href="nosrecettes.html">Nos Recettes</a></li>
+            <li><a href="concept.html">Concept</a></li>
+            <li><a href="#">Boutique</a></li>
+        </ul>
+        <ul class="compte">
+            <li id="compte"><a href="javascript:toggleAccountPopup()"><i class="fa-solid fa-circle-user"></i></a></li>
+            <li><a href="votrepanier.html"><i class="fa-solid fa-basket-shopping"></i></a></li>
+        </ul>
+        <div class="compte-popup" id="connecter">
+            <div class="ligne" id="info">
+                <img src="img/profile.png" alt="">
+                <div class="texte">
+                    <h3>Bonjour, Victor 👋</h3>
+                    <span class="separateur"></span>
+                </div>
+            </div>
+            <div class="ligne">
+                <a href="nosbox.html" class="bouton bleu-f hover">Nos Box</a>
+                <a href="javascript:void(0)" class="bouton-icone bleu-f lien">Mon Compte</a>
+            </div>
+            <div class="ligne" id="liens">
+                <a href="nosrecettes.html">Nos Recettes</a>
+                <a href="javascript:logUserOut()">Déconnecter</a>
+            </div>
+        </div>
+        <div class="compte-popup" id="deconnecter">
+            <div class="ligne">
+                <input type="text" name="email" placeholder="Adresse mail" class="bleu-f">
+            </div>
+            <div class="ligne">
+                <input type="password" name="password" placeholder="Mot de passe" class="bleu-f">
+            </div>
+            <div class="ligne" id="souvenir">
+                <input type="checkbox" name="souvenir" id="remember">
+                <label class="checkbox" for="remember">Se souvenir de moi</label>
+            </div>
+            <div class="ligne">
+                <a href="inscription_compte.html" class="bouton bleu-f">S'inscrire</a>
+                <a href="javascript:logUserIn()" class="bouton bleu-f hover">Se connecter</a>
+            </div>
+            <div class="ligne" id="liens">
+                <a href="javascript:void(0)">Mot de passe oublié ?</a>
+            </div>
+        </div>
+        <div class="mobile">
+            <ul>
+                <li><a href="nosbox.html">Nos Box</a></li>
+                <li><a href="nosrecettes.html">Nos Recettes</a></li>
+                <li><a href="concept.html">Concept</a></li>
+                <li><a href="#">Boutique</a></li>
+				<li id="compte"><a href="#">Mon Compte</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="concept-nav">
+            <a href="#nav_comment">Comment ça marche?</a> <i class="fa-solid fa-chevron-right"></i>
+            <a href="#nav_decouvrir">Découvrir nos box</a> <i class="fa-solid fa-chevron-right"></i>
+            <a href="#nav_abonnement">Abonnement</a> <i class="fa-solid fa-chevron-right"></i>
+            <a href="#nav_qui">Qui sommes nous?</a> <i class="fa-solid fa-chevron-right"></i>
+            <a href="#">Provenance des produits</a> <i class="fa-solid fa-chevron-right"></i>
+        </div>
+        <section class="bandeau" id="nav_comment">
+            <h1>Comment ça marche?</h1>
+            <h3 class="bleu-f">La box repas se compose de recettes saines et rapides, des  ingrédients frais selon la saison et la première commande déclenche un abonnement mensuel automatique</h3>
+        </section>
+        <section id="comment">
+            <div class="concept-ligne">
+                <div class="container" etape="1">
+                    <img src="img/concept/1.png" alt="">
+                    <h2>Choisissez vos recettes/box</h2>
+                    <p>Je choisis les recettes qui me plaisent (5 recettes) pour composer ma box ou je choisi des box prédéfinies .Fiches de recettes faciles et détaillées; C'est moi le chef! En moins de 30 minutes..</p>
+                </div>
+                <div class="container" etape="2">
+                    <img src="img/concept/3.png" alt="">
+                    <h2>Commander votre box</h2>
+                    <p>Recevez chaque semaine, directement chez vous, une Box remplie d'ingrédients frais, de  bonnes qualité et accompagnée de fiches de recettes faciles à suivre. Autre chose de prévu ? Mettez votre abbonement en pause.</p>
+                </div>
+            </div>
+            <div class="concept-ligne">
+                <div class="container" etape="3">
+                    <img src="img/concept/3.png" alt="">
+                    <h2>Faites-vous livrer</h2>
+                    <p>Livraison partout à Paris, recevez votre panier de produits frais et de saison. Je me fais livrer chaque semaine ou seulement de temps en temps.</p>
+                </div>
+                <div class="container" etape="4">
+                    <img src="img/concept/4.png" alt="">
+                    <h2>Je cuisine des bons petits plats</h2>
+                    <p>A l'aide de fiches-recettes faciles et détaillées. En moins de 30 minutes. De bons moments en famille.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="bandeau" id="nav_decouvrir">
+            <h1>Découvrir nos box</h1>
+            <h3 class="bleu-f">Vous pouvez choisir une box que nous avons préparée à l'avance ou créer votre propre box.</h3>
+        </section>
+
+        <section id="decouvrir">
+            <div class="decouvrir-ligne">
+                <div class="decouvrir-box">
+                    <div>
+                        <h1>Box Prédifinie</h1>
+                        <img src="img/concept/box-1.png" alt="">
+                    </div>
+                    <div>
+                        <p>Adieu charge mentale, corvée des courses et menus qui font la moue ! Je m'abonne à l'une des box prédéfinies Minus et je reçois des recettes,
+                            et leurs ingrédients, à réaliser pour la semaine. À moi le plaisir en cuisine avec pile la bonne quantité de chaque ingrédient, des menus variés,
+                            validés par nos diététiciennes, des recettes faciles et rapides à réaliser. Et surtout, à moi les lauriers après la dégustation de mes enfants.
+                            C'est la joie !!!</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="decouvrir-ligne">
+                <div>
+                    <p>Vous souhaitez choisir  vos propres recettes ? Munis vous donne la possibilité de personnaliser vos propres boxes composés de 5 recettes comme dans
+                        les boxes prédéfinis</p>
+                </div>
+                <div class="decouvrir-box">
+                    <div>
+                        <h1>Box Prédifinie</h1>
+                        <img src="img/concept/box-2.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <section class="bandeau" id="nav_abonnement">
+            <h1>Abonnement</h1>
+            <h3 class="bleu-f">Découvrez nos abonnements!</h3>
+        </section>
+        
+        <section id="abonnements">
+                <span class="nouvelle">Notre formule simple</span>
+                    <ul>
+                        <li>Créer votre box </li>
+                        <li>payer votre box 39.90€ par semaine </li>
+                        <li>Création d’un abonnement automatique
+                            d’une durée d’un mois</li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="cartes">
+                <div class="carte">
+                    <img src="img/abonnements/1.png" alt="">
+                    <h2>1 Mois</h2>
+                    <ul>
+                        <li>Chois du créneau horaire de la livraison</li>
+                        <li>Personnaliser sa box</li>
+                        <li id="non">Box offerte</li>
+                        <li id="non">Goodies offerts</li>
+                    </ul>
+                    <div class="choisir">
+                        <a href="" class="bouton-icone bleu-f lien">Choisir</a>
+                    </div>
+                </div>
+                <div class="carte" id="recommande">
+                    <span>Recommandé</span>
+                    <img src="img/abonnements/6.png" alt="">
+                    <h2>6 Mois</h2>
+                    <ul>
+                        <li>Chois du créneau horaire de la livraison</li>
+                        <li>Personnaliser sa box</li>
+                        <li>Box offerte</li>
+                        <li id="non">Goodies offerts</li>
+                    </ul>
+                    <div class="choisir">
+                        <a href="" class="bouton-icone bleu-f lien">Choisir</a>
+                    </div>
+                </div>
+                <div class="carte">
+                    <img src="img/abonnements/12.png" alt="">
+                    <h2>12 Mois</h2>
+                    <ul>
+                        <li>Chois du créneau horaire de la livraison</li>
+                        <li>Personnaliser sa box</li>
+                        <li>Box offerte</li>
+                        <li>Goodies offerts</li>
+                    </ul>
+                    <div class="choisir">
+                        <a href="" class="bouton-icone bleu-f lien">Choisir</a>
+                    </div>
+                </div>
+            </div>
+            <p>Pour chaque box personnalisée ou non :</p>
+            <div class="prix">1 box : 39,90€ / semaine ┃ 2 box : 59,90€ / semaine</div>
+            <p>Vous pouvez annuler votre abonnement à tout moment.</p>
+        </section>
+        
+
+        <section class="bandeau" id="nav_qui">
+            <h1>Qui sommes-nous?</h1>
+        </section>
+        <section id="qui">
+            <p>Minus est une start-up créée par 2 sœurs, Emma et Mathilde, en 2023. Jeunes mamans actives, le concept de
+                Minus est apparu comme une évidence. À force de jongler avec un planning compliqué et d’autres
+                impératifs, le repas des enfants était préparé rapidement, avec quelques courses vite expédiées, parfois
+                à la supérette du coin… Antoine et Germain, leurs compagnons également peu disponibles, ont fait le même
+                constat</p>
+            <div class="a-propos">
+                <img src="img/concept/emma_mathilde.png" alt="">
+                <div>
+                    <h3>Emma et Mathilde, Fondatrices de Minus </H3>
+                    <p>Notre défi : retrouver le plaisir de cuisiner/préparer le déjeuner ou dîner des enfants, sans les
+                        contraintes annexes.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="bandeau" id="nav_provenance">
+            <h1>Proveance des Produits</h1>
+            <h3 class="bleu-f">Découvrez la provenance de nos produits</h3>
+        </section>
+        <section id="provenance">
+            <h3>Tout savoir sur nos ingrédients</h3>
+            <p>Des légumes colorés, des épices qui sentent bons l’évasion, des viandes juteuses et des poissons extra
+                frais : chaque semaine, vos paniers Minus régalent vos papilles !</p>
+
+            <div class="produit">
+                <div class="cheese">
+                    <img src="img/concept/prov-1.png" alt="">
+                    <div class="pro">
+                        <h3>Des artisans fromagers</h3>
+                        <h4><i class="fa-solid fa-location-dot"></i>Côtes d'Armor</h4>
+                        <p>Les labels permettent de valoriser le savoir- faire local, et de mettre en valeur les pépites
+                            de nos régions. Vous retrouvez donc ce label sur notre parmesan au lait cru.</p>
+                    </div>
+                </div>
+                <div class="cheese">
+                    <img src="img/concept/prov-2.png" alt="">
+                    <div class="pro">
+                        <h3>Des fruits et des légumes</h3>
+                        <h4><i class="fa-solid fa-location-dot"></i>Aisne</h4>
+                        <p>Carottes multicolores, pommes de terre fondantes ou épinards frais, ce sont 20 fruits et
+                            légumes différents que vous retrouvez chaque semaine dans vos paniers.</p>
+                    </div>
+                </div>
+                <div class="cheese">
+                    <img src="img/concept/prov-3.png" alt="">
+                    <div class="pro">
+                        <h3>Viandes 100% charolaise </h3>
+                        <h4><i class="fa-solid fa-location-dot"></i>Renne</h4>
+                        <p>Cette viande au fin persillé est prisée dans le monde entier pour sa grande qualitée. Née en
+                            Bourgogne, cette race s'est peu à peu diffusée en France, tant elle offre à la fois une
+                            viande très tendre et une jutosité généreuse. Vous nous en direz des nouvelles !.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="logo"><img src="img/logos/footer.svg" alt=""></div>
+        <div class="content">
+            <div class="partie" id="p1">
+                <div id="newsletter">
+                    Newsletter <input type="text" class="bleu-c" placeholder="Adresse mail"> <a href=""
+                        class="bouton bleu-c">S'abonner</a>
+                </div>
+                <span class="separateur-v"></span>
+                <div id="reseaux">
+                    <a href="" class="bouton-icone bleu-c lien">Communauté</a>
+                    <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="partie">
+                <span class="separateur"></span>
+            </div>
+            <div class="partie" id="p2">
+                <div>
+                    <p><i class="fa-solid fa-location-dot"></i> 5 Rue de Bellechasse, 75007 Paris</p>
+                    <p><i class="fa-solid fa-phone"></i> 06 12 34 56 78</p>
+                    <p><i class="fa-solid fa-envelope"></i> info@minus.fr</p>
+                </div>
+                <div><a href="">Nous contacter</a></div>
+                <div><a href="">Événements</a></div>
+                <div>
+                    <a href="">À propos de nous</a>
+                    <a href="">Minus, c'est qui ?</a>
+                    <a href="">Nos valeurs</a>
+                    <a href="">Nos partenaires</a>
+                </div>
+                <div>
+                    <p><i class="fa-solid fa-lock"></i> Paiement 100% sécurisé par Lyra</p>
+                    <img src="img/moyens_paiement.svg" alt="">
+                </div>
+            </div>
+            <div class="partie">
+                <span class="separateur"></span>
+            </div>
+            <div class="partie" id="p3">
+                <div id="droits">
+                    <p>© 2023 Minus. Tous droits réservés</p>
+                </div>
+                <div id="autre">
+                    <a href="">Termes et conditions</a>
+                    <a href="">Confidentialité</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>

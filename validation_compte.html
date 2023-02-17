@@ -3,43 +3,92 @@
 
 <head>
     <title>Minus - Validation</title>
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/main.js"></script>
 
     <!-- FONTAWESOME -->
     <script src="https://kit.fontawesome.com/83d8ba9781.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
+
     <header>
-        <a href="index.html" class="logo"><img src="../img/logos/manuscrit.svg" alt=""></a>
+        <a href="javascript:toggleHeaderMenu()" class="burger"><i class="fa-solid fa-bars"></i></a>
+        <a href="index.html" class="logo"><img src="img/logos/manuscrit.svg" alt=""></a>
         <ul class="nav">
             <li><a href="#">Nos Box</a></li>
-            <li><a href="#">Nos Recettes</a></li>
-            <li><a href="#">Concept</a></li>
-            <li><a href="#">Boutique</a></lQi>
+            <li><a href="nosrecettes.html">Nos Recettes</a></li>
+            <li><a href="concept.html">Concept</a></li>
+            <li><a href="#">Boutique</a></li>
         </ul>
         <ul class="compte">
-            <li><a href="#"><i class="fa-solid fa-circle-user"></i></a></li>
-            <li><a href="#"><i class="fa-solid fa-basket-shopping"></i></a></li>
+            <li id="compte"><a href="javascript:toggleAccountPopup()"><i class="fa-solid fa-circle-user"></i></a></li>
+            <li><a href="votrepanier.html"><i class="fa-solid fa-basket-shopping"></i></a></li>
         </ul>
+        <div class="compte-popup" id="connecter">
+            <div class="ligne" id="info">
+                <img src="img/profile.png" alt="">
+                <div class="texte">
+                    <h3>Bonjour, Victor 👋</h3>
+                    <span class="separateur"></span>
+                </div>
+            </div>
+            <div class="ligne">
+                <a href="nosbox.html" class="bouton bleu-f hover">Nos Box</a>
+                <a href="javascript:void(0)" class="bouton-icone bleu-f lien">Mon Compte</a>
+            </div>
+            <div class="ligne" id="liens">
+                <a href="nosrecettes.html">Nos Recettes</a>
+                <a href="javascript:logUserOut()">Déconnecter</a>
+            </div>
+        </div>
+        <div class="compte-popup" id="deconnecter">
+            <div class="ligne">
+                <input type="text" name="email" placeholder="Adresse mail" class="bleu-f">
+            </div>
+            <div class="ligne">
+                <input type="password" name="password" placeholder="Mot de passe" class="bleu-f">
+            </div>
+            <div class="ligne" id="souvenir">
+                <input type="checkbox" name="souvenir" id="remember">
+                <label class="checkbox" for="remember">Se souvenir de moi</label>
+            </div>
+            <div class="ligne">
+                <a href="inscription_compte.html" class="bouton bleu-f">S'inscrire</a>
+                <a href="javascript:logUserIn()" class="bouton bleu-f hover">Se connecter</a>
+            </div>
+            <div class="ligne" id="liens">
+                <a href="javascript:void(0)">Mot de passe oublié ?</a>
+            </div>
+        </div>
+        <div class="mobile">
+            <ul>
+                <li><a href="#">Nos Box</a></li>
+                <li><a href="nosrecettes.html">Nos Recettes</a></li>
+                <li><a href="concept.html">Concept</a></li>
+                <li><a href="#">Boutique</a></li>
+				<li id="compte"><a href="#">Mon Compte</a></li>
+            </ul>
+        </div>
     </header>
     <main>
-        <div class="bando">
+        <div class="bandeau">
             <h1>Validation</h1>
             <h3>Merci pour votre inscription !</h3>
         </div>
 
         <section id="champs" style="align-items: center;">
-            <img class="logo-large" src="../img/logos/logogrande.svg" alt="">
+            <img class="logo-large" src="img/logos/logogrande.svg" alt="">
             <h2>Bienvenue chez Minus</h2>
             </div>
             <div class="deux-boutons">
-                <a href="../index.html" class="bouton-icone bleu-f precedent">Retour à la page d’accueil</a>
-                <a href="../abonnements/Untitled-1.html" class="bouton-icone bleu-f hover suivant">Accéder à nos abonnements</a>
+                <a href="index.html" class="bouton-icone bleu-f precedent">Retour à la page d’accueil</a>
+                <a href="abonnements.html" class="bouton-icone bleu-f hover suivant">Accéder à nos abonnements</a>
             </div>
 
         </section>

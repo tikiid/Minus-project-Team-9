@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="css/style.css">
 	<script type="text/javascript" src="js/main.js"></script>
 	<script type="text/javascript" src="js/slider.js"></script>
 
@@ -18,14 +18,14 @@
 		<a href="javascript:toggleHeaderMenu()" class="burger"><i class="fa-solid fa-bars"></i></a>
 		<a href="index.html" class="logo"><img src="img/logos/manuscrit.svg" alt=""></a>
 		<ul class="nav">
-			<li><a href="#">Nos Box</a></li>
-			<li><a href="lesrecettes.html">Nos Recettes</a></li>
-			<li><a href="#">Concept</a></li>
-			<li><a href="#">Boutique</a></lQi>
+			<li><a href="nosbox.html">Nos Box</a></li>
+			<li><a href="nosrecettes.html">Nos Recettes</a></li>
+			<li><a href="concept.html">Concept</a></li>
+			<li><a href="#">Boutique</a></li>
 		</ul>
 		<ul class="compte">
             <li id="compte"><a href="javascript:toggleAccountPopup()"><i class="fa-solid fa-circle-user"></i></a></li>
-			<li><a href="#"><i class="fa-solid fa-basket-shopping"></i></a></li>
+			<li><a href="votrepanier.html"><i class="fa-solid fa-basket-shopping"></i></a></li>
 		</ul>
 		<div class="compte-popup" id="connecter">
 			<div class="ligne" id="info">
@@ -36,11 +36,11 @@
 				</div>
 			</div>
 			<div class="ligne">
-				<a href="/Box/index.html" class="bouton bleu-f hover">Nos Box</a>
+				<a href="nosbox.html" class="bouton bleu-f hover">Nos Box</a>
 				<a href="javascript:void(0)" class="bouton-icone bleu-f lien">Mon Compte</a>
 			</div>
 			<div class="ligne" id="liens">
-				<a href="lesrecettes.html">Nos Recettes</a>
+				<a href="nosrecettes.html">Nos Recettes</a>
 				<a href="javascript:logUserOut()">Déconnecter</a>
 			</div>
 		</div>
@@ -56,7 +56,7 @@
 				<label class="checkbox" for="remember">Se souvenir de moi</label>
 			</div>
 			<div class="ligne">
-				<a href="/inscription_payment/inscription.html" class="bouton bleu-f">S'inscrire</a>
+				<a href="inscription_compte.html" class="bouton bleu-f">S'inscrire</a>
 				<a href="javascript:logUserIn()" class="bouton bleu-f hover">Se connecter</a>
 			</div>
 			<div class="ligne" id="liens">
@@ -65,11 +65,11 @@
 		</div>
 		<div class="mobile">
 			<ul>
-				<li><a href="#">Mon Compte</a></li>
-				<li><a href="#">Nos Box</a></li>
-				<li><a href="recettes/index.html">Nos Recettes</a></li>
-				<li><a href="#">Concept</a></li>
-				<li><a href="#">Boutique</a></lQi>
+				<li><a href="nosbox.html">Nos Box</a></li>
+				<li><a href="nosrecettes.html">Nos Recettes</a></li>
+				<li><a href="concept.html">Concept</a></li>
+				<li><a href="#">Boutique</a></li>
+				<li id="compte"><a href="#">Mon Compte</a></li>
 			</ul>
 		</div>
 	</header>
@@ -150,7 +150,7 @@
 					<p>Facile à préparer grâce à nos recettes faciles et accessibles</p>
 				</div>
 			</div>
-			<a href="" class="bouton-icone bleu-f lien">En savoir plus</a>
+			<a href="concept.html" class="bouton-icone bleu-f lien">En savoir plus</a>
 		</section>
 		<section id="abonnements">
 			<h1>Nos Abonnements</h1>
@@ -188,7 +188,7 @@
 				</div>
 			</div>
 			<div class="prix">1 box : 39,90€ / semaine ┃ 2 box : 59,90€ / semaine</div>
-			<a href="" class="bouton-icone bleu-f lien">En savoir plus</a>
+			<a href="abonnements.html" class="bouton-icone bleu-f lien">En savoir plus</a>
 		</section>
 
 
@@ -201,7 +201,7 @@
 				</div>
 				<button id="next" onclick="scrollReviews(this)"><i class="fa-solid fa-chevron-right"></i></button>
 			</div>
-			<a href="" class="bouton">Ajouter un commentaire</a>
+			<a href="javascript:void(0)" class="bouton">Ajouter un commentaire</a>
 		</section>
 	</main>
 

@@ -1,77 +1,79 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
+    <title>Minus - Nos Recettes</title>
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Minus - Les recettes</title>
-    <!-- FONTAWESOME -->
-    
-    <script src="https://kit.fontawesome.com/83d8ba9781.js" crossorigin="anonymous"></script>
-    
-</head>
-<body>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/main.js"></script>
 
+    <!-- FONTAWESOME -->
+    <script src="https://kit.fontawesome.com/83d8ba9781.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
     <header>
-		<a href="javascript:toggleHeaderMenu()" class="burger"><i class="fa-solid fa-bars"></i></a>
-		<a href="index.html" class="logo"><img src="img/logos/manuscrit.svg" alt=""></a>
-		<ul class="nav">
-			<li><a href="#">Nos Box</a></li>
-			<li><a href="lesrecettes.html">Nos Recettes</a></li>
-			<li><a href="#">Concept</a></li>
-			<li><a href="#">Boutique</a></lQi>
-		</ul>
-		<ul class="compte">
+        <a href="javascript:toggleHeaderMenu()" class="burger"><i class="fa-solid fa-bars"></i></a>
+        <a href="index.html" class="logo"><img src="img/logos/manuscrit.svg" alt=""></a>
+        <ul class="nav">
+            <li><a href="nosbox.html">Nos Box</a></li>
+            <li><a href="nosrecettes.html">Nos Recettes</a></li>
+            <li><a href="concept.html">Concept</a></li>
+            <li><a href="#">Boutique</a></li>
+        </ul>
+        <ul class="compte">
             <li id="compte"><a href="javascript:toggleAccountPopup()"><i class="fa-solid fa-circle-user"></i></a></li>
-			<li><a href="#"><i class="fa-solid fa-basket-shopping"></i></a></li>
-		</ul>
-		<div class="compte-popup" id="connecter">
-			<div class="ligne" id="info">
-				<img src="img/profile.png" alt="">
-				<div class="texte">
-					<h3>Bonjour, Victor 👋</h3>
-					<span class="separateur"></span>
-				</div>
-			</div>
-			<div class="ligne">
-				<a href="/Box/index.html" class="bouton bleu-f hover">Nos Box</a>
-				<a href="javascript:void(0)" class="bouton-icone bleu-f lien">Mon Compte</a>
-			</div>
-			<div class="ligne" id="liens">
-				<a href="lesrecettes.html">Nos Recettes</a>
-				<a href="javascript:logUserOut()">Déconnecter</a>
-			</div>
-		</div>
-		<div class="compte-popup" id="deconnecter">
-			<div class="ligne">
-				<input type="text" name="email" placeholder="Adresse mail" class="bleu-f">
-			</div>
-			<div class="ligne">
-				<input type="password" name="password" placeholder="Mot de passe" class="bleu-f">
-			</div>
-			<div class="ligne" id="souvenir">
-				<input type="checkbox" name="souvenir" id="remember">
-				<label class="checkbox" for="remember">Se souvenir de moi</label>
-			</div>
-			<div class="ligne">
-				<a href="/inscription_payment/inscription.html" class="bouton bleu-f">S'inscrire</a>
-				<a href="javascript:logUserIn()" class="bouton bleu-f hover">Se connecter</a>
-			</div>
-			<div class="ligne" id="liens">
-				<a href="javascript:void(0)">Mot de passe oublié ?</a>
-			</div>
-		</div>
-		<div class="mobile">
-			<ul>
-				<li><a href="#">Mon Compte</a></li>
-				<li><a href="#">Nos Box</a></li>
-				<li><a href="lesrecettes.html">Nos Recettes</a></li>
-				<li><a href="#">Concept</a></li>
-				<li><a href="#">Boutique</a></lQi>
-			</ul>
-		</div>
-	</header>
+            <li><a href="votrepanier.html"><i class="fa-solid fa-basket-shopping"></i></a></li>
+        </ul>
+        <div class="compte-popup" id="connecter">
+            <div class="ligne" id="info">
+                <img src="img/profile.png" alt="">
+                <div class="texte">
+                    <h3>Bonjour, Victor 👋</h3>
+                    <span class="separateur"></span>
+                </div>
+            </div>
+            <div class="ligne">
+                <a href="nosbox.html" class="bouton bleu-f hover">Nos Box</a>
+                <a href="javascript:void(0)" class="bouton-icone bleu-f lien">Mon Compte</a>
+            </div>
+            <div class="ligne" id="liens">
+                <a href="nosrecettes.html">Nos Recettes</a>
+                <a href="javascript:logUserOut()">Déconnecter</a>
+            </div>
+        </div>
+        <div class="compte-popup" id="deconnecter">
+            <div class="ligne">
+                <input type="text" name="email" placeholder="Adresse mail" class="bleu-f">
+            </div>
+            <div class="ligne">
+                <input type="password" name="password" placeholder="Mot de passe" class="bleu-f">
+            </div>
+            <div class="ligne" id="souvenir">
+                <input type="checkbox" name="souvenir" id="remember">
+                <label class="checkbox" for="remember">Se souvenir de moi</label>
+            </div>
+            <div class="ligne">
+                <a href="inscription_compte.html" class="bouton bleu-f">S'inscrire</a>
+                <a href="javascript:logUserIn()" class="bouton bleu-f hover">Se connecter</a>
+            </div>
+            <div class="ligne" id="liens">
+                <a href="javascript:void(0)">Mot de passe oublié ?</a>
+            </div>
+        </div>
+        <div class="mobile">
+            <ul>
+                <li><a href="nosbox.html">Nos Box</a></li>
+                <li><a href="nosrecettes.html">Nos Recettes</a></li>
+                <li><a href="concept.html">Concept</a></li>
+                <li><a href="#">Boutique</a></li>
+				<li id="compte"><a href="#">Mon Compte</a></li>
+            </ul>
+        </div>
+    </header>
     <main>
         <section class="bandeau">
             <h1>Nos recettes</h1>
@@ -121,7 +123,7 @@
                     <p class="body-large">Ajoutez des recettes que vous aimez</p>
                 </div>
             </aside>
-                
+
             <div class="filtre-mobile">
                 <h3>Filtres</h3>
                 <i class="fa-solid fa-chevron-down"></i>
@@ -139,7 +141,7 @@
                         <i class="fa-solid fa-stopwatch"></i>
                     </div>
                     <img class="img-recette" src="img/plat/spaghetti.png" alt="changer l'image">
-                    <h3 class="title-card-recettes" >Spaghetti</h3>
+                    <h3 class="title-card-recettes">Spaghetti</h3>
                     <p class="body-default description-card-recettes">à la bolognaise</p>
                     <div class="boutons-carte-recette">
                         <a class="bouton-icone plus" href="">Ajouter</a>
@@ -152,7 +154,7 @@
                         <i class="fa-solid fa-stopwatch"></i>
                     </div>
                     <img src="img/plat/salade_cesar.png" alt="changer l'image">
-                    <h3 class="title-card-recettes" >Salade César</h3>
+                    <h3 class="title-card-recettes">Salade César</h3>
                     <p class="body-default description-card-recettes">Équilibrée</p>
                     <div class="boutons-carte-recette">
                         <a class="bouton-icone plus" href="">Ajouter</a>
@@ -165,7 +167,7 @@
                         <i class="fa-solid fa-stopwatch"></i>
                     </div>
                     <img src="img/plat/aubergine_au_four.png" alt="changer l'image">
-                    <h3 class="title-card-recettes" >Aubergine au four</h3>
+                    <h3 class="title-card-recettes">Aubergine au four</h3>
                     <p class="body-default description-card-recettes">Facile à préparer</p>
                     <div class="boutons-carte-recette">
                         <a class="bouton-icone plus" href="">Ajouter</a>
@@ -178,7 +180,7 @@
                         <i class="fa-solid fa-stopwatch"></i>
                     </div>
                     <img src="img/plat/pancakes.png" alt="changer l'image">
-                    <h3 class="title-card-recettes" >Crêpes</h3>
+                    <h3 class="title-card-recettes">Crêpes</h3>
                     <p class="body-default description-card-recettes">Moelleux et délicieux</p>
                     <div class="boutons-carte-recette">
                         <a class="bouton-icone plus" href="">Ajouter</a>
@@ -191,7 +193,7 @@
                         <i class="fa-solid fa-stopwatch"></i>
                     </div>
                     <img src="img/plat/filet_de_merlu.png" alt="changer l'image">
-                    <h3 class="title-card-recettes" >Filet de Merlu</h3>
+                    <h3 class="title-card-recettes">Filet de Merlu</h3>
                     <p class="body-default description-card-recettes">Aux pommes de terres</p>
                     <div class="boutons-carte-recette">
                         <a class="bouton-icone plus" href="">Ajouter</a>
@@ -204,7 +206,7 @@
                         <i class="fa-solid fa-stopwatch"></i>
                     </div>
                     <img src="img/plat/couscous.png" alt="changer l'image">
-                    <h3 class="title-card-recettes" >Сouscous</h3>
+                    <h3 class="title-card-recettes">Сouscous</h3>
                     <p class="body-default description-card-recettes">Un délice méditerranéen</p>
                     <div class="boutons-carte-recette">
                         <a class="bouton-icone plus" href="">Ajouter</a>
@@ -249,13 +251,13 @@
                                     <div class="les-allergenes">
                                         <a href="#" class="bouton bleu-f hover">Oeuf</a>
                                         <a href="#" class="bouton bleu-f hover">Lait</a>
-                                        
+
                                     </div>
                                 </div>
                                 <a class="bouton-icone suivant hover bleu-f" href="recette.html">En savoir plus</a>
+                            </div>
                         </div>
                     </div>
-                </div>
             </section>
         </section>
     </main>
@@ -265,7 +267,8 @@
         <div class="content">
             <div class="partie" id="p1">
                 <div id="newsletter">
-                    Newsletter <input type="text" class="bleu-c" placeholder="Adresse mail"> <a href="" class="bouton bleu-c">S'abonner</a>
+                    Newsletter <input type="text" class="bleu-c" placeholder="Adresse mail"> <a href=""
+                        class="bouton bleu-c">S'abonner</a>
                 </div>
                 <span class="separateur-v"></span>
                 <div id="reseaux">
@@ -314,4 +317,5 @@
 
     <script src="js/lesrecettes.js"></script>
 </body>
+
 </html>

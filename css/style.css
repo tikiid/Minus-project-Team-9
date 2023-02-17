@@ -44,6 +44,7 @@ p {
 h1 {
 	font-size: 2.6rem;
 	font-weight: 800;
+	white-space: nowrap;
 }
 
 h2 {
@@ -378,22 +379,21 @@ section {
 	gap: 1.5rem;
 }
 
+
 /* BANDEAU */
-
-.bandeau{
-    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.15);
-    border-radius: 16px;
-    text-align: center;
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-	
-}
-
-.bandeau h1{
+.bandeau {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-radius: 1rem;
 	color: var(--couleur-bleu-f-hex);
+	box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.15);
+	padding: 1.2rem;
+	gap: 1rem;
+}
+.bandeau h1 {
+	text-align: center;
+	white-space: pre-wrap;
 }
 
 
@@ -822,17 +822,6 @@ section#abonnements .prix {
 }
 
 
-
-.bandeau {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	border-radius: 1rem;
-	box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.15);
-	padding: 1.2rem;
-	gap: 1rem;
-}
-
 .bandeau .groupe-note {
 	display: flex;
 	align-items: center;
@@ -893,6 +882,7 @@ section#info-recette .info {
 	border-radius: 1rem;
 	padding: 1rem;
 	background-color: var(--couleur-bleu-c-hex);
+	box-sizing: border-box;
 }
 
 section#info-recette .info p {
@@ -973,13 +963,6 @@ section#preparation .cooking {
 	align-items: center;
 	margin: 0 auto;
 	padding: -1em;
-}
-
-section#preparation .cooking h2 {
-	font-weight: 700;
-	font-size: 36px;
-	line-height: 42px;
-	text-align: justify;
 }
 
 
@@ -1105,11 +1088,6 @@ section#recette-autre .boutons-carte-recette {
 
 
 
-
-
-h1.bleu-f {
-	color: var(--couleur-bleu-f-hex);
-}
 
 
 /* ---- INPUT ---- */
@@ -1339,12 +1317,12 @@ a.bouton-icone.favoriser::after {
 
 /* RECETTES */
 
-section#recettes {
+section#recettes, section#box {
 	flex-direction: row;
 	align-items: flex-start;
 }
 
-section#recettes aside{
+section aside{
     display: flex;
     flex-direction: column;
 	align-items: flex-start;
@@ -1354,7 +1332,7 @@ section#recettes aside{
 
 /* Le filtre */
 
-section#recettes .filtre{
+section .filtre{
     max-width: 310px;
     padding: 30px;
     width: 100%;
@@ -1369,21 +1347,21 @@ section#recettes .filtre{
 
 }
 
-section#recettes .filtre .titre-filtre{
+section .filtre .titre-filtre{
     display: flex;
     justify-content: center;
     width: 100%;
 }
 
-section#recettes .filtre h3 {
+section .filtre h3 {
     text-align: center;
 }
 
-section#recettes .filtre .categorie-filtre p {
+section .filtre .categorie-filtre p {
     margin-bottom: 5px;
 }
 
-section#recettes .filtre .categorie-filtre .in-filtre{
+section .filtre .categorie-filtre .in-filtre{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -1595,6 +1573,153 @@ section#recettes .recettes .carte-recette img{
 .overlay .popup  .allergenes .infos-allergenes .les-allergenes{
 	display: flex;
 	gap: 10px;
+}
+
+
+/* Nos box */
+
+section#box .box{
+    display: flex;
+	flex-direction: row;
+    flex-wrap: wrap;
+	max-width: 1200px;
+    width: 100%;
+    gap: 50px;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+/* Cartes des recettes */
+
+
+
+section#box .box .carte-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 305px;
+    width: 100%;
+    border: 1px solid white;
+    padding: 20px 10px;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    transition: box-shadow 300ms;
+    cursor: pointer;
+}
+
+section#box .box .carte-box:hover{
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.25);
+}
+
+section#box .box .carte-box .timer{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+}
+
+section#box .box .carte-box .timer i{
+    margin: 0;
+}
+
+section#box .box .carte-box .boutons-carte-box{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+	gap: 15px;
+	
+}
+
+section#box .box .carte-box img{
+	border-radius: 8px;
+}
+
+/* LIVRAISON */
+
+
+section#champs .logo-large {
+	width: 15%;
+	margin: 0 auto;
+}
+
+section#champs {
+	display: flex;
+	align-items: stretch;
+	margin: 0 auto;
+	width: 50%;
+}
+
+section#champs .livraison {
+	display: flex;
+	justify-content: flex-end;
+	gap: 10px;
+}
+
+section#champs .livraison input:nth-of-type(1) {
+	width: 100%;
+}
+
+section#champs .livraison input:nth-of-type(2) {
+	width: 50%;
+}
+
+section#champs p#deuxieme-adresse {
+	font-style: italic;
+	color: rgba(var(--couleur-bleu-f-rgb), 0.75);
+	font-weight: 500;
+	font-size: 15px;
+}
+
+
+section#champs .suivant {
+	display: flex;
+	justify-content: center;
+}
+
+section#champs .deux-boutons {
+	display: flex;
+	justify-content: center;
+	gap: 1.5em;
+}
+
+section#champs img#moyens_paiement {
+	width: 17rem;
+	margin: auto;
+}
+
+section#livraison {
+	width: 30%;
+	box-shadow: 0px 10px 40px rgb(0 0 0 / 15%);
+	border-radius: 1rem;
+	padding: 2rem 0.8rem;
+	margin: 0 auto;
+	gap: 1rem;
+}
+
+section#livraison .adresses {
+	display: flex;
+	flex-direction: column;
+	gap: 0.8rem;
+}
+
+section#livraison .adresses .ligne {
+	display: flex;
+	justify-content: flex-start;
+	align-items: baseline;
+	gap: 0.5rem;
+}
+
+section#livraison .creneau{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 1rem;
 }
 
 /* VOTRE PANIER */
@@ -1832,6 +1957,112 @@ section#recettes .recettes .carte-recette img{
     justify-content: space-between;
 }
 
+
+/* CONCEPT */
+.concept-nav {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+}
+
+.concept-nav a {
+	color: var(--couleur-noir-hex);
+	text-decoration: none;
+	font-weight: 600;
+}
+
+section#comment {
+	gap: 5rem;
+}
+
+section#comment .concept-ligne {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: flex-start;
+	gap: 2rem;
+}
+
+.concept-ligne .container {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	width: 30%;
+	text-align: center;
+}
+
+.concept-ligne .container::after {
+	content: attr(etape);
+	position: absolute;
+	top: -1rem;
+	right: -1rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: var(--couleur-orange-hex);
+	background-color: var(--couleur-bleu-c-hex);
+	width: 5rem;
+	aspect-ratio: 1 / 1;
+	border-radius: 50%;
+	font-size: 2rem;
+	font-weight: 700;
+	transform: rotate(-20deg);
+}
+
+.concept-ligne .container img {
+	width: 100%;
+	border-radius: 1rem;
+}
+
+section#decouvrir {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.decouvrir-ligne {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.decouvrir-ligne .decouvrir-box {
+	display: flex;
+	gap: 10rem;
+}
+
+.decouvrir-ligne .decouvrir-box div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 2rem;
+}
+
+.decouvrir-ligne .decouvrir-box img {
+	height: 18rem;
+	border-radius: 1rem;
+}
+
+section#qui {
+	width: 80%;
+	margin: 0 auto;
+}
+
+section#qui .a-propos {
+	display: flex;
+	align-items: center;
+	gap: 3rem;
+}
+
+section#qui .a-propos img {
+	width: 20rem;
+	border-radius: 1rem;
+}
+
+
+
 /* VERSION MOBILE */
 
 @media screen and (max-width: 900px) {
@@ -1852,12 +2083,45 @@ section#recettes .recettes .carte-recette img{
 		display: none;
 	}
 
-	section#recettes {
+
+
+	footer {
+		padding: 1em;
+
+	}
+	footer .logo {display: none;}
+
+	footer .content {
+		padding-left: 1em;
+	}
+
+	footer .content .partie {
+		justify-content: space-around;
+		align-items: flex-start;
+		gap: 1em;
+	}
+
+	footer .content .partie#p2 div {
+		justify-content: space-around;
+	}
+
+	footer .content .partie div#newsletter,
+	footer .content .partie .separateur-v {
+		display: none;
+	}
+
+	footer .content .partie#p2 div img {
+		width: 100%;
+	}
+
+
+
+	section#recettes, section#box {
 		flex-direction: column;
 		align-items: stretch;
 	}
 
-	section#recettes aside {
+	section#recettes aside, section#box aside {
 		display: none;
 	}
 
@@ -1868,6 +2132,46 @@ section#recettes .recettes .carte-recette img{
 	section#recettes .recettes {
 		align-items: center;
 	}
+	section#recettes .overlay .popup{
+		margin: 0;
+	}
+
+	section#recettes .overlay .popup#titre-carte-recette-focus{
+		margin-top: 10px;
+	}
+
+	section#recettes .overlay .popup .fermer-recette{
+		top: 1%;
+		right: 1%;
+	}
+
+	section#recettes .overlay .popup img{
+		height: 20vh;
+		
+	}
+
+	
+
+	section#recettes .overlay .popup .temps-preparation {
+		gap: 10px;
+		justify-content: center;
+	}
+
+	section#recettes .overlay .popup .temps-preparation .temps-preparation-icone h3 {
+		display: none;
+	}
+
+	section#recettes .overlay .popup .allergenes{
+		flex-direction: column;
+	}
+
+	section#recettes .overlay .popup .avis-boutons-ajouter-favoris{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: 15px 0;
+		gap:15px;
+	}
 
 	slideshow slides {
 		height: 50vw;
@@ -1875,6 +2179,10 @@ section#recettes .recettes .carte-recette img{
 
 	slideshow slide content {
 		padding: 1em;
+	}
+
+	slideshow slide content h3 {
+		display: none;
 	}
 
 	section#etapes .suivi {
@@ -1955,6 +2263,9 @@ section#recettes .recettes .carte-recette img{
 		width: 80%;
 	}
 
+	section#livraison {
+		width: 80%;
+	}
 
 	section#info-recette .info-ligne {
 		flex-direction: column;
@@ -1976,53 +2287,58 @@ section#recettes .recettes .carte-recette img{
 	}
 
 
-
-	footer {
-		padding: 1em;
-
+	section#decouvrir {
+		gap: 3rem;
 	}
-
-	footer .content {
-		padding-left: 1em;
+	section#comment .concept-ligne {
+		flex-direction: column;
+		align-items: center;
 	}
-
-	footer .content .partie {
-		justify-content: space-around;
-		align-items: flex-start;
-		gap: 1em;
+	.concept-ligne .container {
+		width: 80%;
 	}
-
-	footer .content .partie#p2 div {
-		justify-content: space-around;
+	.concept-nav {
+		flex-direction: column;
 	}
-
-	footer .content .partie div#newsletter,
-	footer .content .partie .separateur-v {
+	.concept-nav i {
 		display: none;
 	}
+	.decouvrir-ligne {
+		flex-direction: column;
+	}
+	.decouvrir-ligne:nth-of-type(2) {
+		flex-direction: column-reverse;
+	}
+	.decouvrir-ligne .decouvrir-box {
+		flex-direction: column;
+		gap: 2rem;
+	}
+	section#qui .a-propos {
+		flex-direction: column;
+	}
 
-	footer .content .partie#p2 div img {
-		width: 100%;
+	section#preparation .cooking img {
+		display: none;
 	}
 
 	/* VOTRE PANIER - MOBILE */
 
-	section .le-panier{
+	.le-panier{
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
-    section .le-panier #les-recettes-panier .recette-panier .bouton-recette-panier{
+    .le-panier #les-recettes-panier .recette-panier .bouton-recette-panier{
         flex-direction: row;
     }
 
-    section .le-panier #les-recettes-panier{
+    .le-panier #les-recettes-panier{
         width: 80%;
         align-items: center;
     }
 
-    section .le-panier #les-recettes-panier .recettes-mobile{
+    .le-panier #les-recettes-panier .recettes-mobile{
         display: flex;
         padding: 13px;
         width: 95%;
@@ -2031,74 +2347,29 @@ section#recettes .recettes .carte-recette img{
     }
 }
 
+/* VARIATIONS POUR LA PAGE PANIER */
 @media screen and (max-width : 1055px){
-    section .le-panier #les-recettes-panier .recette-panier .bouton-recette-panier{
+    .le-panier #les-recettes-panier .recette-panier .bouton-recette-panier{
         flex-direction: column;
     }
-}
-
-@media screen and (max-width : 800px){
-	section#recettes .overlay .popup{
-		margin: 0;
-	}
-
-	section#recettes .overlay .popup#titre-carte-recette-focus{
-		margin-top: 10px;
-	}
-
-	section#recettes .overlay .popup .fermer-recette{
-		top: 1%;
-		right: 1%;
-	}
-
-	section#recettes .overlay .popup img{
-		height: 20vh;
-		
-	}
-
-	
-
-	section#recettes .overlay .popup .temps-preparation {
-		gap: 10px;
-		justify-content: center;
-	}
-
-	section#recettes .overlay .popup .temps-preparation .temps-preparation-icone h3 {
-		display: none;
-	}
-
-	section#recettes .overlay .popup .allergenes{
-		flex-direction: column;
-	}
-
-	section#recettes .overlay .popup .avis-boutons-ajouter-favoris{
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		margin: 15px 0;
-		gap:15px;
-	}
-
 }
 
 @media screen and (max-width : 720px){
-    section .le-panier #les-recettes-panier .recette-panier{
+    .le-panier #les-recettes-panier .recette-panier{
         flex-direction: column;
     }
 
-    section .le-panier #les-recettes-panier .recette-panier .photo-titre-recette-panier{
+    .le-panier #les-recettes-panier .recette-panier .photo-titre-recette-panier{
         justify-content: space-around;
         width: 80%;
     }
 
-    section .le-panier #les-recettes-panier .recette-panier .bouton-recette-panier{
+    .le-panier #les-recettes-panier .recette-panier .bouton-recette-panier{
         flex-direction: row;
     }
 }
 
 @media screen and (max-width:560px) {
-
-	/* PANIER RECAPITULATIF */
     #recap{
         display: flex;
         flex-direction: column;

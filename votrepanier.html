@@ -1,28 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<title>Minus - Panier</title>
+	<link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="style.css"> -->
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript" src="js/main.js"></script>
+
 	<!-- FONTAWESOME -->
 	<script src="https://kit.fontawesome.com/83d8ba9781.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
 	<header>
 		<a href="javascript:toggleHeaderMenu()" class="burger"><i class="fa-solid fa-bars"></i></a>
 		<a href="index.html" class="logo"><img src="img/logos/manuscrit.svg" alt=""></a>
 		<ul class="nav">
-			<li><a href="Box/index.html">Nos Box</a></li>
-			<li><a href="lesrecettes.html">Nos Recettes</a></li>
-			<li><a href="#">Concept</a></li>
-			<li><a href="#">Boutique</a></lQi>
+			<li><a href="nosbox.html">Nos Box</a></li>
+			<li><a href="nosrecettes.html">Nos Recettes</a></li>
+			<li><a href="concept.html">Concept</a></li>
+			<li><a href="#">Boutique</a></li>
 		</ul>
 		<ul class="compte">
             <li id="compte"><a href="javascript:toggleAccountPopup()"><i class="fa-solid fa-circle-user"></i></a></li>
-			<li><a href="#"><i class="fa-solid fa-basket-shopping"></i></a></li>
+			<li><a href="votrepanier.html"><i class="fa-solid fa-basket-shopping"></i></a></li>
 		</ul>
 		<div class="compte-popup" id="connecter">
 			<div class="ligne" id="info">
@@ -33,11 +37,11 @@
 				</div>
 			</div>
 			<div class="ligne">
-				<a href="/Box/index.html" class="bouton bleu-f hover">Nos Box</a>
+				<a href="nosbox.html" class="bouton bleu-f hover">Nos Box</a>
 				<a href="javascript:void(0)" class="bouton-icone bleu-f lien">Mon Compte</a>
 			</div>
 			<div class="ligne" id="liens">
-				<a href="lesrecettes.html">Nos Recettes</a>
+				<a href="nosrecettes.html">Nos Recettes</a>
 				<a href="javascript:logUserOut()">Déconnecter</a>
 			</div>
 		</div>
@@ -53,7 +57,7 @@
 				<label class="checkbox" for="remember">Se souvenir de moi</label>
 			</div>
 			<div class="ligne">
-				<a href="/inscription_payment/inscription.html" class="bouton bleu-f">S'inscrire</a>
+				<a href="inscription_compte.html" class="bouton bleu-f">S'inscrire</a>
 				<a href="javascript:logUserIn()" class="bouton bleu-f hover">Se connecter</a>
 			</div>
 			<div class="ligne" id="liens">
@@ -62,42 +66,42 @@
 		</div>
 		<div class="mobile">
 			<ul>
-				<li><a href="#">Mon Compte</a></li>
-				<li><a href="#">Nos Box</a></li>
-				<li><a href="lesrecettes.html">Nos Recettes</a></li>
-				<li><a href="#">Concept</a></li>
-				<li><a href="#">Boutique</a></lQi>
+				<li><a href="nosbox.html">Nos Box</a></li>
+				<li><a href="nosrecettes.html">Nos Recettes</a></li>
+				<li><a href="concept.html">Concept</a></li>
+				<li><a href="#">Boutique</a></li>
+				<li id="compte"><a href="#">Mon Compte</a></li>
 			</ul>
 		</div>
 	</header>
-    <main>
-        <section class="bandeau">
-            <h1>Votre Panier</h1>
-        </section>
-        <section class="le-panier">
-            <aside id="infos-panier">
-                <div id="photo-box">
-                    <h3>Box</h3>
-                    <img src="img/panier/box.png" alt="image de la box légumes de saison">
-                    <p>Box légumes de saison</p>
-                    <div id="quantite-box">
-                        <a href="" class=""><i class="fa-solid fa-minus"></i></a>
-                        <span>1</span>
-                        <a href="" class=""><i class="fa-solid fa-plus"></i></a>
-                    </div>
-                </div>
-                <div id="prix-box">
-                    <h2>39.90 €</h2>
-                    <p>1 box / semaine</p>
+	<main>
+		<section class="bandeau">
+			<h1>Votre Panier</h1>
+		</section>
+		<section class="le-panier">
+			<aside id="infos-panier">
+				<div id="photo-box">
+					<h3>Box</h3>
+					<img src="img/panier/box.png" alt="image de la box légumes de saison">
+					<p>Box légumes de saison</p>
+					<div id="quantite-box">
+						<a href="javascript:addQuantity(-1)" class=""><i class="fa-solid fa-minus"></i></a>
+						<span>1</span>
+						<a href="javascript:addQuantity(1)" class=""><i class="fa-solid fa-plus"></i></a>
+					</div>
+				</div>
+				<div id="prix-box">
+					<h2>39.90 €</h2>
+					<p>1 box / semaine</p>
 					<p>(5 repas)</p>
-                </div>
-            </aside>
+				</div>
+			</aside>
 			<div id="les-recettes-panier">
 				<div class="bandeau recettes-mobile">
-					
+
 					<h3>Les recettes dans la box</h3>
 				</div>
-				<div class="recette-panier">					
+				<div class="recette-panier">
 					<div class="photo-titre-recette-panier">
 						<img src="img/plat/spaghetti.png" alt="">
 						<div class="titre-recette-panier">
@@ -163,19 +167,20 @@
 					</div>
 				</div>
 			</div>
-        </section>
-		<section id="boutons-retour-suivant">
-			
-			<a href="" class="bouton-icone bleu-f precedent">Retour</a>
-			<a href="inscription_payment/livraison.html" class="bouton-icone bleu-f suivant">Livraison</a>
 		</section>
-    </main>
-    <footer>
+		<section id="boutons-retour-suivant">
+
+			<a href="#" class="bouton-icone bleu-f precedent">Retour</a>
+			<a href="livraison.html" class="bouton-icone hover bleu-f suivant">Livraison</a>
+		</section>
+	</main>
+	<footer>
 		<div class="logo"><img src="img/logos/footer.svg" alt=""></div>
 		<div class="content">
 			<div class="partie" id="p1">
 				<div id="newsletter">
-					Newsletter <input type="text" class="bleu-c" placeholder="Adresse mail"> <a href="" class="bouton bleu-c">S'abonner</a>
+					Newsletter <input type="text" class="bleu-c" placeholder="Adresse mail"> <a href=""
+						class="bouton bleu-c">S'abonner</a>
 				</div>
 				<span class="separateur-v"></span>
 				<div id="reseaux">
@@ -222,4 +227,5 @@
 		</div>
 	</footer>
 </body>
+
 </html>
