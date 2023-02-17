@@ -2114,6 +2114,12 @@ section#qui .a-propos img {
 		width: 100%;
 	}
 
+	header .compte-popup {
+		left: 5vw;
+	}
+	header .compte-popup input {
+		width: 100%;
+	}
 
 
 	section#recettes, section#box {
